@@ -1,0 +1,5 @@
+# Store every text file with LF line endings, whatever OS it was edited or uploaded on.
+* text=auto eol=lf
+*.png binary
+*.woff binary
+*.woff2 binary
