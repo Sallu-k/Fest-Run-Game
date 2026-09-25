@@ -1,0 +1,6545 @@
+{
+ "generatedAt": "2026-09-21T18:19:29.328Z",
+ "seed": 20260921,
+ "screenedLayouts": 5934,
+ "gamesPerFinalist": 100000,
+ "winnerGames": 250000,
+ "board": {
+  "name": "recommended",
+  "routeLengths": {
+   "A": 15,
+   "B": 16,
+   "C": 19
+  },
+  "prefixLen": 3,
+  "suffixLen": 3,
+  "specials": [
+   {
+    "node": "C6",
+    "type": "booster"
+   },
+   {
+    "node": "S2",
+    "type": "chance",
+    "card": "isi"
+   },
+   {
+    "node": "M2",
+    "type": "chance",
+    "card": "hop"
+   },
+   {
+    "node": "A3",
+    "type": "chance",
+    "card": "orth"
+   },
+   {
+    "node": "A8",
+    "type": "noise"
+   },
+   {
+    "node": "C2",
+    "type": "booster"
+   },
+   {
+    "node": "C8",
+    "type": "booster"
+   },
+   {
+    "node": "A6",
+    "type": "noise"
+   }
+  ]
+ },
+ "rules": {
+  "boosterAmount": 4,
+  "noiseBack": 2,
+  "isiRange": 3,
+  "isiPenalty": 2,
+  "hopMaxRange": null,
+  "orthBlocksIsi": true,
+  "orthBlocksHop": true,
+  "winnerSlots": 5
+ },
+ "model": {
+  "teams": 10,
+  "rounds": 5,
+  "pmf": [
+   0.03,
+   0.09,
+   0.17,
+   0.27,
+   0.22,
+   0.14,
+   0.08
+  ],
+  "skillSigma": 0.25,
+  "quickBase": 0.6,
+  "quickSkillSlope": 1.5,
+  "policyMix": {
+   "value": 0.5,
+   "shortest": 0.3,
+   "random": 0.2
+  },
+  "routeNoise": 1,
+  "cardValues": {
+   "isi": 1,
+   "hop": 2.5,
+   "orth": 0.8
+  },
+  "hopGainThreshold": 4,
+  "isiUseProb": 0.9,
+  "aliveRadius": 6
+ },
+ "report": {
+  "meta": {
+   "games": 250000,
+   "parityGames": 125000,
+   "teams": 10,
+   "rounds": 5,
+   "slots": 5,
+   "seed": 425118
+  },
+  "finish": {
+   "meanQualRound": 4.3091891453400235,
+   "medianQualRound": 4,
+   "endByRound": [
+    0,
+    0,
+    0.000056,
+    0.137272,
+    0.81794
+   ],
+   "fallbackPct": 0.18206,
+   "fallback4Pct": 0.8627279999999999,
+   "qualRoundShare": [
+    0,
+    0,
+    0.0933245902969196,
+    0.5041616740661372,
+    0.40251373563694315
+   ]
+  },
+  "avgTeam": {
+   "reachByRound": [
+    0,
+    0,
+    0.033674666666666665,
+    0.285668,
+    0.64508
+   ],
+   "meanFinish": 5.035577333333333
+  },
+  "terciles": {
+   "qualifyRate": [
+    0.279205,
+    0.5364226666666667,
+    0.7579706666666667
+   ],
+   "reachRate": [
+    0.368892,
+    0.64508,
+    0.8448973333333333
+   ]
+  },
+  "routes": [
+   {
+    "id": "A",
+    "length": 15,
+    "usage": 0.558974085997922,
+    "qualifyRate": 0.5433838570795417,
+    "meanFinish": 4.9690320391053655,
+    "reachRate": 0.6426430060208916,
+    "specialsOnBranch": {
+     "chance": 1,
+     "noise": 2,
+     "booster": 0
+    }
+   },
+   {
+    "id": "B",
+    "length": 16,
+    "usage": 0.14733936024257055,
+    "qualifyRate": 0.511253931949432,
+    "meanFinish": 5.078068550380563,
+    "reachRate": 0.6141963068197253,
+    "specialsOnBranch": {
+     "chance": 0,
+     "noise": 0,
+     "booster": 0
+    }
+   },
+   {
+    "id": "C",
+    "length": 19,
+    "usage": 0.2936865537595074,
+    "qualifyRate": 0.4127544811439676,
+    "meanFinish": 5.266126735323257,
+    "reachRate": 0.4943151852624091,
+    "specialsOnBranch": {
+     "chance": 0,
+     "noise": 0,
+     "booster": 3
+    }
+   }
+  ],
+  "parity": [
+   {
+    "id": "A",
+    "length": 15,
+    "usage": 0.3240567083630507,
+    "qualifyRate": 0.5285499735694137,
+    "meanFinish": 5.027460638187504,
+    "reachRate": 0.6115024923795926,
+    "specialsOnBranch": {
+     "chance": 1,
+     "noise": 2,
+     "booster": 0
+    }
+   },
+   {
+    "id": "B",
+    "length": 16,
+    "usage": 0.3332845047783944,
+    "qualifyRate": 0.487116979935729,
+    "meanFinish": 5.156882712639482,
+    "reachRate": 0.5700304062330376,
+    "specialsOnBranch": {
+     "chance": 0,
+     "noise": 0,
+     "booster": 0
+    }
+   },
+   {
+    "id": "C",
+    "length": 19,
+    "usage": 0.3426587868585549,
+    "qualifyRate": 0.48638433164436906,
+    "meanFinish": 5.135565662865913,
+    "reachRate": 0.5644621361309871,
+    "specialsOnBranch": {
+     "chance": 0,
+     "noise": 0,
+     "booster": 3
+    }
+   }
+  ],
+  "parityGap": {
+   "qualifyPp": 4.216564192504463,
+   "finishRounds": 0.12942207445197784,
+   "slowest": "B",
+   "fastest": "A"
+  },
+  "nodes": [
+   {
+    "id": "S2",
+    "type": "chance",
+    "card": "isi",
+    "hitRate": 0.2003144
+   },
+   {
+    "id": "A3",
+    "type": "chance",
+    "card": "orth",
+    "hitRate": 0.189112
+   },
+   {
+    "id": "A6",
+    "type": "noise",
+    "hitRate": 0.1798408
+   },
+   {
+    "id": "A8",
+    "type": "noise",
+    "hitRate": 0.160786
+   },
+   {
+    "id": "C2",
+    "type": "booster",
+    "hitRate": 0.0935712
+   },
+   {
+    "id": "C6",
+    "type": "booster",
+    "hitRate": 0.0645452
+   },
+   {
+    "id": "C8",
+    "type": "booster",
+    "hitRate": 0.0608444
+   },
+   {
+    "id": "M2",
+    "type": "chance",
+    "card": "hop",
+    "hitRate": 0.208762
+   }
+  ],
+  "perTeam": {
+   "chance": 0.5981884,
+   "noise": 0.3406268,
+   "booster": 0.2189608
+  },
+  "quick": {
+   "chanceCorrect": 0.5920830293599809,
+   "noiseCorrect": 0.6057620833122936
+  },
+  "cards": [
+   {
+    "card": "isi",
+    "gainedPerTeam": 0.1097048,
+    "gainRate": 0.1097048,
+    "usedPerTeam": 0.1042444,
+    "blockedShare": 0,
+    "uplift": -0.14025696737358692
+   },
+   {
+    "card": "hop",
+    "gainedPerTeam": 0.126482,
+    "gainRate": 0.126482,
+    "usedPerTeam": 0.00004,
+    "blockedShare": 0,
+    "uplift": 0.07656284537146381
+   },
+   {
+    "card": "orth",
+    "gainedPerTeam": 0.1118824,
+    "gainRate": 0.1118824,
+    "usedPerTeam": 0,
+    "blockedShare": 0,
+    "uplift": 0.008447809495884561
+   }
+  ],
+  "isiStepsPerTeam": 0.2084448,
+  "hopGainAvg": 2.7,
+  "rounds": {
+   "avgRemaining": [
+    12.087603599999994,
+    9.337920399999996,
+    6.083671485603195,
+    3.4697717009300737,
+    2.438679556190266
+   ],
+   "gap": [
+    4.807348,
+    7.996888,
+    9.941528725608634,
+    8.86093415305867,
+    7.4092496979017906
+   ],
+   "neighbors": [
+    7.134715199999992,
+    3.150284800000001,
+    3.00628888551092,
+    3.330867261516554,
+    3.4157591514396977
+   ],
+   "stillRunning": [
+    1,
+    1,
+    0.999944,
+    0.862728,
+    0.18206
+   ]
+  },
+  "alive": {
+   "mean": 8.312752107269034,
+   "pBelowSlots": 0.0031991543105126994
+  },
+  "cluster": {
+   "meanNearRx": 7.271433112453236,
+   "pAllNear": 0.14576130278504537
+  },
+  "comeback": {
+   "share": 0.2742592,
+   "bottomHalfQualify": 0.2742592
+  }
+ },
+ "report4Rounds": {
+  "meta": {
+   "games": 100000,
+   "parityGames": 50000,
+   "teams": 10,
+   "rounds": 4,
+   "slots": 5,
+   "seed": 424247
+  },
+  "finish": {
+   "meanQualRound": 3.8436412751393094,
+   "medianQualRound": 4,
+   "endByRound": [
+    0,
+    0,
+    0.00004,
+    0.1377
+   ],
+   "fallbackPct": 0.8623,
+   "fallback4Pct": 0.8623000000000001,
+   "qualRoundShare": [
+    0,
+    0,
+    0.15635872486069075,
+    0.8436412751393092
+   ]
+  },
+  "avgTeam": {
+   "reachByRound": [
+    0,
+    0,
+    0.03428,
+    0.28657
+   ],
+   "meanFinish": 4.67915
+  },
+  "terciles": {
+   "qualifyRate": [
+    0.283345,
+    0.5337333333333333,
+    0.75514
+   ],
+   "reachRate": [
+    0.1188675,
+    0.28657,
+    0.51616
+   ]
+  },
+  "routes": [
+   {
+    "id": "A",
+    "length": 15,
+    "usage": 0.5594815376529167,
+    "qualifyRate": 0.5469616726487789,
+    "meanFinish": 4.61109158906654,
+    "reachRate": 0.3347574465643791,
+    "specialsOnBranch": {
+     "chance": 1,
+     "noise": 2,
+     "booster": 0
+    }
+   },
+   {
+    "id": "B",
+    "length": 16,
+    "usage": 0.14726344804342856,
+    "qualifyRate": 0.5111569741305325,
+    "meanFinish": 4.69005680657158,
+    "reachRate": 0.28179192720040325,
+    "specialsOnBranch": {
+     "chance": 0,
+     "noise": 0,
+     "booster": 0
+    }
+   },
+   {
+    "id": "C",
+    "length": 19,
+    "usage": 0.29325501430365475,
+    "qualifyRate": 0.41002189081953755,
+    "meanFinish": 4.760018470378985,
+    "reachRate": 0.20617047475714873,
+    "specialsOnBranch": {
+     "chance": 0,
+     "noise": 0,
+     "booster": 3
+    }
+   }
+  ],
+  "parity": [
+   {
+    "id": "A",
+    "length": 15,
+    "usage": 0.32446896031398864,
+    "qualifyRate": 0.5379182822829508,
+    "meanFinish": 4.637409324502328,
+    "reachRate": 0.3137418600768075,
+    "specialsOnBranch": {
+     "chance": 1,
+     "noise": 2,
+     "booster": 0
+    }
+   },
+   {
+    "id": "B",
+    "length": 16,
+    "usage": 0.3329647926607566,
+    "qualifyRate": 0.48748018826422074,
+    "meanFinish": 4.725154727396542,
+    "reachRate": 0.25088437177965134,
+    "specialsOnBranch": {
+     "chance": 0,
+     "noise": 0,
+     "booster": 0
+    }
+   },
+   {
+    "id": "C",
+    "length": 19,
+    "usage": 0.34256624702525473,
+    "qualifyRate": 0.4810510654748656,
+    "meanFinish": 4.700313960708051,
+    "reachRate": 0.25427888614238353,
+    "specialsOnBranch": {
+     "chance": 0,
+     "noise": 0,
+     "booster": 3
+    }
+   }
+  ],
+  "parityGap": {
+   "qualifyPp": 5.686721680808521,
+   "finishRounds": 0.08774540289421395,
+   "slowest": "B",
+   "fastest": "A"
+  },
+  "nodes": [
+   {
+    "id": "S2",
+    "type": "chance",
+    "card": "isi",
+    "hitRate": 0.200619
+   },
+   {
+    "id": "A3",
+    "type": "chance",
+    "card": "orth",
+    "hitRate": 0.187617
+   },
+   {
+    "id": "A6",
+    "type": "noise",
+    "hitRate": 0.170674
+   },
+   {
+    "id": "A8",
+    "type": "noise",
+    "hitRate": 0.143082
+   },
+   {
+    "id": "C2",
+    "type": "booster",
+    "hitRate": 0.093025
+   },
+   {
+    "id": "C6",
+    "type": "booster",
+    "hitRate": 0.061413
+   },
+   {
+    "id": "C8",
+    "type": "booster",
+    "hitRate": 0.056449
+   },
+   {
+    "id": "M2",
+    "type": "chance",
+    "card": "hop",
+    "hitRate": 0.160563
+   }
+  ],
+  "perTeam": {
+   "chance": 0.548799,
+   "noise": 0.313756,
+   "booster": 0.210887
+  },
+  "quick": {
+   "chanceCorrect": 0.594073604361524,
+   "noiseCorrect": 0.6118161883756804
+  },
+  "cards": [
+   {
+    "card": "isi",
+    "gainedPerTeam": 0.109853,
+    "gainRate": 0.109853,
+    "usedPerTeam": 0.103515,
+    "blockedShare": 0,
+    "uplift": -0.14758720968039216
+   },
+   {
+    "card": "hop",
+    "gainedPerTeam": 0.099744,
+    "gainRate": 0.099744,
+    "usedPerTeam": 0.00005,
+    "blockedShare": 0,
+    "uplift": 0.2795174473938256
+   },
+   {
+    "card": "orth",
+    "gainedPerTeam": 0.111155,
+    "gainRate": 0.111155,
+    "usedPerTeam": 0,
+    "blockedShare": 0,
+    "uplift": 0.01060187515738996
+   }
+  ],
+  "isiStepsPerTeam": 0.206982,
+  "hopGainAvg": 2.56,
+  "rounds": {
+   "avgRemaining": [
+    12.087815999999997,
+    9.3387,
+    6.083328333133325,
+    3.4706041980749163
+   ],
+   "gap": [
+    4.80728,
+    7.99949,
+    9.941617664706587,
+    8.854690942827322
+   ],
+   "neighbors": [
+    7.133865999999995,
+    3.1526340000000013,
+    3.008196177053431,
+    3.331955456889938
+   ],
+   "stillRunning": [
+    1,
+    1,
+    0.99996,
+    0.8623
+   ]
+  },
+  "alive": {
+   "mean": 5.731959278371135,
+   "pBelowSlots": 0.22405896235849435
+  },
+  "cluster": {
+   "meanNearRx": 6.781336238198984,
+   "pAllNear": 0.06187363834422658
+  },
+  "comeback": {
+   "share": 0.260986,
+   "bottomHalfQualify": 0.260986
+  }
+ },
+ "sensitivity": [
+  {
+   "label": "weaker teams",
+   "note": "answer distribution tilted down (θ = −0.35, mean ≈ 2.7 correct)",
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424251
+    },
+    "finish": {
+     "meanQualRound": 4.634584229173607,
+     "medianQualRound": 5,
+     "endByRound": [
+      0,
+      0,
+      0,
+      0.00118,
+      0.10742
+     ],
+     "fallbackPct": 0.89258,
+     "fallback4Pct": 0.99882,
+     "qualRoundShare": [
+      0,
+      0,
+      0.03271961965902553,
+      0.2999765315083427,
+      0.6673038488326318
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.005383333333333334,
+      0.06875,
+      0.25772666666666666
+     ],
+     "meanFinish": 5.66814
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.2808525,
+      0.53,
+      0.7621966666666666
+     ],
+     "reachRate": [
+      0.1014075,
+      0.25772666666666666,
+      0.5007133333333333
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.4595158585034398,
+      "qualifyRate": 0.5262223334299084,
+      "meanFinish": 5.576790370584981,
+      "reachRate": 0.30510048199752415,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 2,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.10623336463312176,
+      "qualifyRate": 0.5280596986584891,
+      "meanFinish": 5.621310370363338,
+      "reachRate": 0.2871573830568979,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.43425077686343844,
+      "qualifyRate": 0.4752737171179457,
+      "meanFinish": 5.693555279941656,
+      "reachRate": 0.22957399071893422,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.3119458316861239,
+      "qualifyRate": 0.5060487912116334,
+      "meanFinish": 5.622996398528375,
+      "reachRate": 0.27475930918989516,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 2,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.33391893309237014,
+      "qualifyRate": 0.4735945588421835,
+      "meanFinish": 5.706535067319831,
+      "reachRate": 0.22659208833424946,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.354135235221506,
+      "qualifyRate": 0.5315646785437645,
+      "meanFinish": 5.630359502437691,
+      "reachRate": 0.27009955802615393,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 5.797011970158106,
+     "finishRounds": 0.08353866879145588,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "S2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.33685
+     },
+     {
+      "id": "A3",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.189717
+     },
+     {
+      "id": "A6",
+      "type": "noise",
+      "hitRate": 0.162132
+     },
+     {
+      "id": "A8",
+      "type": "noise",
+      "hitRate": 0.124199
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.161037
+     },
+     {
+      "id": "C6",
+      "type": "booster",
+      "hitRate": 0.105997
+     },
+     {
+      "id": "C8",
+      "type": "booster",
+      "hitRate": 0.093737
+     },
+     {
+      "id": "M2",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.168462
+     }
+    ],
+    "perTeam": {
+     "chance": 0.695029,
+     "noise": 0.286331,
+     "booster": 0.360771
+    },
+    "quick": {
+     "chanceCorrect": 0.5913695687518075,
+     "noiseCorrect": 0.6196953875060681
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.179132,
+      "gainRate": 0.179132,
+      "usedPerTeam": 0.169933,
+      "blockedShare": 0,
+      "uplift": -0.1076977519043834
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.103913,
+      "gainRate": 0.103913,
+      "usedPerTeam": 0.000113,
+      "blockedShare": 0,
+      "uplift": 0.3610168658858619
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.109274,
+      "gainRate": 0.109274,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": -0.03136810274678541
+     }
+    ],
+    "isiStepsPerTeam": 0.339688,
+    "hopGainAvg": 2.4601769911504423,
+    "rounds": {
+     "avgRemaining": [
+      12.761752000000001,
+      10.927551000000006,
+      8.464937,
+      5.923562804108846,
+      3.957832351161799
+     ],
+     "gap": [
+      4.42173,
+      7.50828,
+      9.98913,
+      10.940730061472538,
+      9.898429272446167
+     ],
+     "neighbors": [
+      7.643943999999978,
+      4.020582000000003,
+      2.509351730158728,
+      2.723813099457357,
+      2.9628769747907544
+     ],
+     "stillRunning": [
+      1,
+      1,
+      1,
+      0.99882,
+      0.89258
+     ]
+    },
+    "alive": {
+     "mean": 5.907250555655674,
+     "pBelowSlots": 0.19245709937726518
+    },
+    "cluster": {
+     "meanNearRx": 6.562651275367715,
+     "pAllNear": 0.038261031465276485
+    },
+    "comeback": {
+     "share": 0.308724,
+     "bottomHalfQualify": 0.308724
+    }
+   }
+  },
+  {
+   "label": "stronger teams",
+   "note": "answer distribution tilted up (θ = +0.35, mean ≈ 3.9 correct)",
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424251
+    },
+    "finish": {
+     "meanQualRound": 3.7520409367604666,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.01049,
+      0.81771,
+      0.99905
+     ],
+     "fallbackPct": 0.00095,
+     "fallback4Pct": 0.18228999999999995,
+     "qualRoundShare": [
+      0,
+      0,
+      0.30091039482449244,
+      0.6461382735905484,
+      0.05295133158495918
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.14288,
+      0.6418033333333333,
+      0.92087
+     ],
+     "meanFinish": 4.2944466666666665
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.3105475,
+      0.5359333333333334,
+      0.71667
+     ],
+     "reachRate": [
+      0.7359525,
+      0.92087,
+      0.9778466666666666
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.6312314120167124,
+      "qualifyRate": 0.5375917872674129,
+      "meanFinish": 4.296398216138717,
+      "reachRate": 0.8867834256156777,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 2,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.17619558108510822,
+      "qualifyRate": 0.4811028940184232,
+      "meanFinish": 4.440879500087973,
+      "reachRate": 0.8727857836098325,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.19257300689817936,
+      "qualifyRate": 0.39413609737858835,
+      "meanFinish": 4.655150388434215,
+      "reachRate": 0.7813759295417723,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.3308006008156212,
+      "qualifyRate": 0.5464642433916177,
+      "meanFinish": 4.330866526397252,
+      "reachRate": 0.8761336428934194,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 2,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.33268864990489755,
+      "qualifyRate": 0.49351328604063965,
+      "meanFinish": 4.466965251893711,
+      "reachRate": 0.8642118552362631,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.33651074927948127,
+      "qualifyRate": 0.46077586463081943,
+      "meanFinish": 4.531004273377276,
+      "reachRate": 0.8288449994353674,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 8.568837876079826,
+     "finishRounds": 0.2001377469800234,
+     "slowest": "C",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "S2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.10705
+     },
+     {
+      "id": "A3",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.203608
+     },
+     {
+      "id": "A6",
+      "type": "noise",
+      "hitRate": 0.169357
+     },
+     {
+      "id": "A8",
+      "type": "noise",
+      "hitRate": 0.165315
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.056032
+     },
+     {
+      "id": "C6",
+      "type": "booster",
+      "hitRate": 0.036049
+     },
+     {
+      "id": "C8",
+      "type": "booster",
+      "hitRate": 0.033047
+     },
+     {
+      "id": "M2",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.18649
+     }
+    ],
+    "perTeam": {
+     "chance": 0.497148,
+     "noise": 0.334672,
+     "booster": 0.125128
+    },
+    "quick": {
+     "chanceCorrect": 0.5938211558731001,
+     "noiseCorrect": 0.5996886503800736
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.058821,
+      "gainRate": 0.058821,
+      "usedPerTeam": 0.054978,
+      "blockedShare": 0,
+      "uplift": -0.20346284882377763
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.111772,
+      "gainRate": 0.111772,
+      "usedPerTeam": 0.000004,
+      "blockedShare": 0,
+      "uplift": -0.009703700575679161
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.123203,
+      "gainRate": 0.123203,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": 0.0808340768428228
+     }
+    ],
+    "isiStepsPerTeam": 0.109945,
+    "hopGainAvg": 3.5,
+    "rounds": {
+     "avgRemaining": [
+      11.40718299999999,
+      7.748939000000002,
+      3.904929712686078,
+      2.1840254539470076,
+      1.7884210526315787
+     ],
+     "gap": [
+      4.73558,
+      7.60661,
+      8.481207870562198,
+      6.628120028525975,
+      5.821052631578947
+     ],
+     "neighbors": [
+      6.656773999999994,
+      3.2983280000000015,
+      3.959562436947709,
+      3.7615272890658296,
+      3.875563909774435
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.98951,
+      0.18229,
+      0.00095
+     ]
+    },
+    "alive": {
+     "mean": 9.397443633770365,
+     "pBelowSlots": 0
+    },
+    "cluster": {
+     "meanNearRx": 7.610660127120765,
+     "pAllNear": 0.230859316350533
+    },
+    "comeback": {
+     "share": 0.26907,
+     "bottomHalfQualify": 0.26907
+    }
+   }
+  },
+  {
+   "label": "wider skill spread",
+   "note": "team skill spread doubled (σ 0.25 → 0.5)",
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424251
+    },
+    "finish": {
+     "meanQualRound": 4.081203317541652,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00135,
+      0.24504,
+      0.77036
+     ],
+     "fallbackPct": 0.22964,
+     "fallback4Pct": 0.75496,
+     "qualRoundShare": [
+      0,
+      0,
+      0.20215786241050068,
+      0.5144809576373468,
+      0.2833611799521525
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.05296,
+      0.33612333333333333,
+      0.6594866666666667
+     ],
+     "meanFinish": 4.95143
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.1625475,
+      0.56863,
+      0.8813066666666667
+     ],
+     "reachRate": [
+      0.2310875,
+      0.6594866666666667,
+      0.92623
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.5511375114134958,
+      "qualifyRate": 0.577853853244804,
+      "meanFinish": 4.783098173394642,
+      "reachRate": 0.6548051248311668,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 2,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.13877295829730843,
+      "qualifyRate": 0.5617025612658578,
+      "meanFinish": 4.881929938206459,
+      "reachRate": 0.6478132073686432,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.3100895302891958,
+      "qualifyRate": 0.3502081392546074,
+      "meanFinish": 5.376601760226184,
+      "reachRate": 0.39688475143808266,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.3248914543401091,
+      "qualifyRate": 0.5256769026031367,
+      "meanFinish": 4.939591806275885,
+      "reachRate": 0.5836971257291395,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 2,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.3321648722201906,
+      "qualifyRate": 0.4947690473583689,
+      "meanFinish": 5.063598652117319,
+      "reachRate": 0.5514823059985645,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.34294367343970034,
+      "qualifyRate": 0.4956080145633642,
+      "meanFinish": 5.065110963173305,
+      "reachRate": 0.552583053004283,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 3.09078552447678,
+     "finishRounds": 0.1255191568974201,
+     "slowest": "C",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "S2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.22891
+     },
+     {
+      "id": "A3",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.1974
+     },
+     {
+      "id": "A6",
+      "type": "noise",
+      "hitRate": 0.156494
+     },
+     {
+      "id": "A8",
+      "type": "noise",
+      "hitRate": 0.141316
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.105739
+     },
+     {
+      "id": "C6",
+      "type": "booster",
+      "hitRate": 0.064874
+     },
+     {
+      "id": "C8",
+      "type": "booster",
+      "hitRate": 0.057388
+     },
+     {
+      "id": "M2",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.171008
+     }
+    ],
+    "perTeam": {
+     "chance": 0.597318,
+     "noise": 0.29781,
+     "booster": 0.228001
+    },
+    "quick": {
+     "chanceCorrect": 0.5678968321731473,
+     "noiseCorrect": 0.6293442127530976
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.104266,
+      "gainRate": 0.104266,
+      "usedPerTeam": 0.095634,
+      "blockedShare": 0,
+      "uplift": -0.11936447590670494
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.10797,
+      "gainRate": 0.10797,
+      "usedPerTeam": 0.000035,
+      "blockedShare": 0,
+      "uplift": 0.11114115764281074
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.120678,
+      "gainRate": 0.120678,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": 0.029258651085542167
+     }
+    ],
+    "isiStepsPerTeam": 0.191064,
+    "hopGainAvg": 2.5428571428571427,
+    "rounds": {
+     "avgRemaining": [
+      12.077567999999996,
+      9.293660000000001,
+      6.151178090422076,
+      4.083448129702235,
+      3.3147186901236716
+     ],
+     "gap": [
+      5.06415,
+      8.97907,
+      11.67527161668252,
+      10.904485005828123,
+      9.985586134819718
+     ],
+     "neighbors": [
+      6.77011999999999,
+      2.953578000000002,
+      2.5285606362239803,
+      2.4069089963349226,
+      2.442340219197477
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99865,
+      0.75496,
+      0.22964
+     ]
+    },
+    "alive": {
+     "mean": 7.471760093249974,
+     "pBelowSlots": 0.01830560559499841
+    },
+    "cluster": {
+     "meanNearRx": 6.707357599044602,
+     "pAllNear": 0.05275455631133496
+    },
+    "comeback": {
+     "share": 0.215992,
+     "bottomHalfQualify": 0.215992
+    }
+   }
+  },
+  {
+   "label": "identical teams",
+   "note": "no skill differences (σ = 0): pure luck check",
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424251
+    },
+    "finish": {
+     "meanQualRound": 4.438735993893932,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00001,
+      0.08061,
+      0.85458
+     ],
+     "fallbackPct": 0.14542,
+     "fallback4Pct": 0.91939,
+     "qualRoundShare": [
+      0,
+      0,
+      0.05178270906713547,
+      0.45769858797179697,
+      0.4905187029610676
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.024743333333333332,
+      0.24749,
+      0.6175933333333333
+     ],
+     "meanFinish": 5.110173333333333
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.4982975,
+      0.50083,
+      0.50144
+     ],
+     "reachRate": [
+      0.61534,
+      0.6175933333333333,
+      0.6180933333333334
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.5705405581083717,
+      "qualifyRate": 0.5185423429360667,
+      "meanFinish": 5.07046405810717,
+      "reachRate": 0.6389404976407984,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 2,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.15475132126981905,
+      "qualifyRate": 0.4772761051767701,
+      "meanFinish": 5.181758848199342,
+      "reachRate": 0.5980652540565691,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.2747081206218093,
+      "qualifyRate": 0.4743178111712971,
+      "meanFinish": 5.156914351447376,
+      "reachRate": 0.5815568757644592,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.32476044377153807,
+      "qualifyRate": 0.53376730551313,
+      "meanFinish": 5.065656254618909,
+      "reachRate": 0.6407843523673449,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 2,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.3331586621252153,
+      "qualifyRate": 0.4838060933513432,
+      "meanFinish": 5.1935584571514335,
+      "reachRate": 0.5919075491520336,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.34208089410324666,
+      "qualifyRate": 0.4837519586519797,
+      "meanFinish": 5.163556210388456,
+      "reachRate": 0.5767908510489019,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 5.001534686115034,
+     "finishRounds": 0.1279022025325247,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "S2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.190467
+     },
+     {
+      "id": "A3",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.188061
+     },
+     {
+      "id": "A6",
+      "type": "noise",
+      "hitRate": 0.189136
+     },
+     {
+      "id": "A8",
+      "type": "noise",
+      "hitRate": 0.176328
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.082055
+     },
+     {
+      "id": "C6",
+      "type": "booster",
+      "hitRate": 0.060269
+     },
+     {
+      "id": "C8",
+      "type": "booster",
+      "hitRate": 0.058527
+     },
+     {
+      "id": "M2",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.231394
+     }
+    ],
+    "perTeam": {
+     "chance": 0.609922,
+     "noise": 0.365464,
+     "booster": 0.200851
+    },
+    "quick": {
+     "chanceCorrect": 0.6000734520151757,
+     "noiseCorrect": 0.6003491451962437
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.112266,
+      "gainRate": 0.112266,
+      "usedPerTeam": 0.108133,
+      "blockedShare": 0,
+      "uplift": -0.15223587888126033
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.13756,
+      "gainRate": 0.13756,
+      "usedPerTeam": 0.000059,
+      "blockedShare": 0,
+      "uplift": 0.04902128519724087
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.11057,
+      "gainRate": 0.11057,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": -0.005705536317439302
+     }
+    ],
+    "isiStepsPerTeam": 0.216253,
+    "hopGainAvg": 2.694915254237288,
+    "rounds": {
+     "avgRemaining": [
+      12.092457000000005,
+      9.339940000000006,
+      6.049115491154908,
+      3.195167447981814,
+      1.9774996561683407
+     ],
+     "gap": [
+      4.67867,
+      7.42735,
+      8.76059760597606,
+      7.675099794428915,
+      5.969330215926282
+     ],
+     "neighbors": [
+      7.286361999999988,
+      3.2853180000000033,
+      3.315506813798296,
+      4.044959304452558,
+      4.063689630255441
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99999,
+      0.91939,
+      0.14542
+     ]
+    },
+    "alive": {
+     "mean": 8.797952990569835,
+     "pBelowSlots": 0.000609099511632713
+    },
+    "cluster": {
+     "meanNearRx": 7.669580378665543,
+     "pAllNear": 0.24525497905403823
+    },
+    "comeback": {
+     "share": 0.31594,
+     "bottomHalfQualify": 0.31594
+    }
+   }
+  },
+  {
+   "label": "8 teams",
+   "note": "only 8 teams playing",
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 8,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424251
+    },
+    "finish": {
+     "meanQualRound": 4.38701481416347,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00002,
+      0.054,
+      0.58165
+     ],
+     "fallbackPct": 0.41835,
+     "fallback4Pct": 0.946,
+     "qualRoundShare": [
+      0,
+      0,
+      0.08155657473956043,
+      0.44987203635740963,
+      0.46857138890302996
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.03630333333333333,
+      0.29610333333333333,
+      0.6530033333333334
+     ],
+     "meanFinish": 5.01459
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.3926133333333333,
+      0.6922933333333333,
+      0.87264
+     ],
+     "reachRate": [
+      0.36261333333333334,
+      0.6530033333333334,
+      0.85551
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.5597797266469223,
+      "qualifyRate": 0.6634537829583107,
+      "meanFinish": 4.969073201466577,
+      "reachRate": 0.6431353097706967,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 2,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.1472024333626831,
+      "qualifyRate": 0.6440320826536161,
+      "meanFinish": 5.079339994562262,
+      "reachRate": 0.6136317292006526,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.2930178399903946,
+      "qualifyRate": 0.5431721465065754,
+      "meanFinish": 5.265204901764106,
+      "reachRate": 0.4939112099469445,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.32559291380142735,
+      "qualifyRate": 0.6457821143208359,
+      "meanFinish": 5.029602028272895,
+      "reachRate": 0.6108481868469576,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 2,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.3321543014235935,
+      "qualifyRate": 0.6155531958157294,
+      "meanFinish": 5.152557179759457,
+      "reachRate": 0.5714662268513289,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.34225278477497917,
+      "qualifyRate": 0.6154801929542465,
+      "meanFinish": 5.13193246601374,
+      "reachRate": 0.5661014471568484,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 3.030192136658938,
+     "finishRounds": 0.12295515148656211,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "S2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.2001075
+     },
+     {
+      "id": "A3",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.189005
+     },
+     {
+      "id": "A6",
+      "type": "noise",
+      "hitRate": 0.18398875
+     },
+     {
+      "id": "A8",
+      "type": "noise",
+      "hitRate": 0.16786
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.093565
+     },
+     {
+      "id": "C6",
+      "type": "booster",
+      "hitRate": 0.06531125
+     },
+     {
+      "id": "C8",
+      "type": "booster",
+      "hitRate": 0.06219875
+     },
+     {
+      "id": "M2",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.22623625
+     }
+    ],
+    "perTeam": {
+     "chance": 0.61534875,
+     "noise": 0.35184875,
+     "booster": 0.221075
+    },
+    "quick": {
+     "chanceCorrect": 0.5914674402117498,
+     "noiseCorrect": 0.6037715069330216
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.1093375,
+      "gainRate": 0.1093375,
+      "usedPerTeam": 0.10235875,
+      "blockedShare": 0,
+      "uplift": -0.12184303426720842
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.135965,
+      "gainRate": 0.135965,
+      "usedPerTeam": 0.00005625,
+      "blockedShare": 0,
+      "uplift": 0.09834852877253952
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.11220125,
+      "gainRate": 0.11220125,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": -0.0015841300549503182
+     }
+    ],
+    "isiStepsPerTeam": 0.20464375,
+    "hopGainAvg": 2.7333333333333334,
+    "rounds": {
+     "avgRemaining": [
+      12.08905625,
+      9.330255,
+      6.077499049980999,
+      3.375311839323467,
+      2.1804858372176406
+     ],
+     "gap": [
+      4.49183,
+      7.45865,
+      9.23867477349547,
+      8.276712473572939,
+      6.762184773514999
+     ],
+     "neighbors": [
+      5.5494275,
+      2.4530575,
+      2.3459770385883876,
+      2.4861291150709777,
+      2.260660759104645
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99998,
+      0.946,
+      0.41835
+     ]
+    },
+    "alive": {
+     "mean": 6.687674418604651,
+     "pBelowSlots": 0.03211416490486258
+    },
+    "cluster": {
+     "meanNearRx": 6.432201495744864,
+     "pAllNear": 0.46662082008080463
+    },
+    "comeback": {
+     "share": 0.215622,
+     "bottomHalfQualify": 0.416325
+    }
+   }
+  },
+  {
+   "label": "more careful route choice",
+   "note": "every team picks routes by expected value",
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424251
+    },
+    "finish": {
+     "meanQualRound": 4.313488037111961,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00002,
+      0.13149,
+      0.81002
+     ],
+     "fallbackPct": 0.18998,
+     "fallback4Pct": 0.86851,
+     "qualRoundShare": [
+      0,
+      0,
+      0.09400849423303007,
+      0.4984949744219791,
+      0.40749653134499086
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.03390666666666667,
+      0.2798,
+      0.63724
+     ],
+     "meanFinish": 5.049053333333333
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.2840725,
+      0.5328266666666667,
+      0.7550766666666666
+     ],
+     "reachRate": [
+      0.36933,
+      0.63724,
+      0.8385566666666666
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.38540856868142037,
+      "qualifyRate": 0.6077433691495742,
+      "meanFinish": 4.8289568984987294,
+      "reachRate": 0.7121054394130948,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 2,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.16093216752361486,
+      "qualifyRate": 0.5392731025564508,
+      "meanFinish": 5.027653436785039,
+      "reachRate": 0.6429548393514374,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.45365926379496474,
+      "qualifyRate": 0.3951109562394414,
+      "meanFinish": 5.311381009302592,
+      "reachRate": 0.469198671436322,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.32449762546605104,
+      "qualifyRate": 0.5287275508190251,
+      "meanFinish": 5.026408624432603,
+      "reachRate": 0.6118141898559305,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 2,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.3330131264797059,
+      "qualifyRate": 0.4876291323866129,
+      "meanFinish": 5.155800215145524,
+      "reachRate": 0.5700515027133577,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.342489248054243,
+      "qualifyRate": 0.48575385370528357,
+      "meanFinish": 5.137272546659343,
+      "reachRate": 0.5637103088807601,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 4.297369711374155,
+     "finishRounds": 0.1293915907129204,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "S2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.201327
+     },
+     {
+      "id": "A3",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.126872
+     },
+     {
+      "id": "A6",
+      "type": "noise",
+      "hitRate": 0.121075
+     },
+     {
+      "id": "A8",
+      "type": "noise",
+      "hitRate": 0.111794
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.145672
+     },
+     {
+      "id": "C6",
+      "type": "booster",
+      "hitRate": 0.101374
+     },
+     {
+      "id": "C8",
+      "type": "booster",
+      "hitRate": 0.094775
+     },
+     {
+      "id": "M2",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.204132
+     }
+    ],
+    "perTeam": {
+     "chance": 0.532331,
+     "noise": 0.232869,
+     "booster": 0.341821
+    },
+    "quick": {
+     "chanceCorrect": 0.5967508937108679,
+     "noiseCorrect": 0.6282416294139623
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.110339,
+      "gainRate": 0.110339,
+      "usedPerTeam": 0.10456,
+      "blockedShare": 0,
+      "uplift": -0.14123930654230382
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.123588,
+      "gainRate": 0.123588,
+      "usedPerTeam": 0.000057,
+      "blockedShare": 0,
+      "uplift": 0.07235041613494514
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.078564,
+      "gainRate": 0.078564,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": 0.0355826415720115
+     }
+    ],
+    "isiStepsPerTeam": 0.209041,
+    "hopGainAvg": 2.6491228070175437,
+    "rounds": {
+     "avgRemaining": [
+      12.251861999999997,
+      9.651199999999998,
+      6.281260625212508,
+      3.5499625795903333,
+      2.4360564269923146
+     ],
+     "gap": [
+      4.83654,
+      8.42204,
+      10.503290065801316,
+      9.29305362056856,
+      7.590483208758816
+     ],
+     "neighbors": [
+      6.889659999999992,
+      2.6625099999999993,
+      2.749587991759833,
+      3.344263592838168,
+      3.5395433019682963
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99998,
+      0.86851,
+      0.18998
+     ]
+    },
+    "alive": {
+     "mean": 8.31664574961716,
+     "pBelowSlots": 0.003097258523217925
+    },
+    "cluster": {
+     "meanNearRx": 7.246771684649762,
+     "pAllNear": 0.14225574677168465
+    },
+    "comeback": {
+     "share": 0.26874,
+     "bottomHalfQualify": 0.26874
+    }
+   }
+  },
+  {
+   "label": "ISI-happy teams",
+   "note": "every team always uses ISI when a target exists",
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424251
+    },
+    "finish": {
+     "meanQualRound": 4.3103278560399145,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00004,
+      0.13697,
+      0.81785
+     ],
+     "fallbackPct": 0.18215,
+     "fallback4Pct": 0.86303,
+     "qualRoundShare": [
+      0,
+      0,
+      0.09303583159593502,
+      0.5036004807682152,
+      0.4033636876358498
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.03426,
+      0.28608666666666666,
+      0.6450533333333334
+     ],
+     "meanFinish": 5.0346
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.27858,
+      0.5368533333333333,
+      0.7583733333333333
+     ],
+     "reachRate": [
+      0.3687575,
+      0.6450533333333334,
+      0.84476
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.5586579657767665,
+      "qualifyRate": 0.5429699253506799,
+      "meanFinish": 4.970631008840428,
+      "reachRate": 0.6421005688249538,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 2,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.14721973749247078,
+      "qualifyRate": 0.5125971033798433,
+      "meanFinish": 5.076506928916588,
+      "reachRate": 0.614855542793451,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.2941222967307627,
+      "qualifyRate": 0.41303319873314803,
+      "meanFinish": 5.265763359947203,
+      "reachRate": 0.4948546896314767,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.32354365628927545,
+      "qualifyRate": 0.5289638578064787,
+      "meanFinish": 5.02662262552036,
+      "reachRate": 0.6122276036544254,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 2,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.33306582665567286,
+      "qualifyRate": 0.48725852486104854,
+      "meanFinish": 5.157278053177107,
+      "reachRate": 0.5693675829953433,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.3433905170550517,
+      "qualifyRate": 0.48601268183513613,
+      "meanFinish": 5.137332152182021,
+      "reachRate": 0.5636947500932488,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 4.295117597134257,
+     "finishRounds": 0.1306554276567473,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "S2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.200833
+     },
+     {
+      "id": "A3",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.189392
+     },
+     {
+      "id": "A6",
+      "type": "noise",
+      "hitRate": 0.179894
+     },
+     {
+      "id": "A8",
+      "type": "noise",
+      "hitRate": 0.160624
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.093595
+     },
+     {
+      "id": "C6",
+      "type": "booster",
+      "hitRate": 0.064637
+     },
+     {
+      "id": "C8",
+      "type": "booster",
+      "hitRate": 0.061047
+     },
+     {
+      "id": "M2",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.207667
+     }
+    ],
+    "perTeam": {
+     "chance": 0.597892,
+     "noise": 0.340518,
+     "booster": 0.219279
+    },
+    "quick": {
+     "chanceCorrect": 0.5917439938985636,
+     "noiseCorrect": 0.6055773850427878
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.109926,
+      "gainRate": 0.109926,
+      "usedPerTeam": 0.106155,
+      "blockedShare": 0,
+      "uplift": -0.13798792274332686
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.125871,
+      "gainRate": 0.125871,
+      "usedPerTeam": 0.000033,
+      "blockedShare": 0,
+      "uplift": 0.07810702158124222
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.111933,
+      "gainRate": 0.111933,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": 0.008928222880975091
+     }
+    ],
+    "isiStepsPerTeam": 0.212262,
+    "hopGainAvg": 2.6363636363636362,
+    "rounds": {
+     "avgRemaining": [
+      12.087810999999999,
+      9.354190999999997,
+      6.091247649905994,
+      3.471389175347324,
+      2.4401592094427675
+     ],
+     "gap": [
+      4.80729,
+      7.994,
+      9.941467658706348,
+      8.8572819021355,
+      7.417897337359319
+     ],
+     "neighbors": [
+      7.133843999999992,
+      3.158348000000001,
+      3.005374722925425,
+      3.3308776626610337,
+      3.40775525142805
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99996,
+      0.86303,
+      0.18215
+     ]
+    },
+    "alive": {
+     "mean": 8.311356499774051,
+     "pBelowSlots": 0.003221208996211024
+    },
+    "cluster": {
+     "meanNearRx": 7.269083572782295,
+     "pAllNear": 0.14628599376413767
+    },
+    "comeback": {
+     "share": 0.273976,
+     "bottomHalfQualify": 0.273976
+    }
+   }
+  }
+ ],
+ "candidates": [
+  {
+   "label": "RECOMMENDED",
+   "description": "p3/s3 isi3/-2 B+4 N-2 hop∞ A3=C:orth A6=N A8=N C2=B C6=B C8=B M2=C:hop S2=C:isi",
+   "score": 4.217559260036952,
+   "report": {
+    "meta": {
+     "games": 250000,
+     "parityGames": 125000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 425118
+    },
+    "finish": {
+     "meanQualRound": 4.3091891453400235,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.000056,
+      0.137272,
+      0.81794
+     ],
+     "fallbackPct": 0.18206,
+     "fallback4Pct": 0.8627279999999999,
+     "qualRoundShare": [
+      0,
+      0,
+      0.0933245902969196,
+      0.5041616740661372,
+      0.40251373563694315
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.033674666666666665,
+      0.285668,
+      0.64508
+     ],
+     "meanFinish": 5.035577333333333
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.279205,
+      0.5364226666666667,
+      0.7579706666666667
+     ],
+     "reachRate": [
+      0.368892,
+      0.64508,
+      0.8448973333333333
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.558974085997922,
+      "qualifyRate": 0.5433838570795417,
+      "meanFinish": 4.9690320391053655,
+      "reachRate": 0.6426430060208916,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 2,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.14733936024257055,
+      "qualifyRate": 0.511253931949432,
+      "meanFinish": 5.078068550380563,
+      "reachRate": 0.6141963068197253,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.2936865537595074,
+      "qualifyRate": 0.4127544811439676,
+      "meanFinish": 5.266126735323257,
+      "reachRate": 0.4943151852624091,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.3240567083630507,
+      "qualifyRate": 0.5285499735694137,
+      "meanFinish": 5.027460638187504,
+      "reachRate": 0.6115024923795926,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 2,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.3332845047783944,
+      "qualifyRate": 0.487116979935729,
+      "meanFinish": 5.156882712639482,
+      "reachRate": 0.5700304062330376,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.3426587868585549,
+      "qualifyRate": 0.48638433164436906,
+      "meanFinish": 5.135565662865913,
+      "reachRate": 0.5644621361309871,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 4.216564192504463,
+     "finishRounds": 0.12942207445197784,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "S2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.2003144
+     },
+     {
+      "id": "A3",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.189112
+     },
+     {
+      "id": "A6",
+      "type": "noise",
+      "hitRate": 0.1798408
+     },
+     {
+      "id": "A8",
+      "type": "noise",
+      "hitRate": 0.160786
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.0935712
+     },
+     {
+      "id": "C6",
+      "type": "booster",
+      "hitRate": 0.0645452
+     },
+     {
+      "id": "C8",
+      "type": "booster",
+      "hitRate": 0.0608444
+     },
+     {
+      "id": "M2",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.208762
+     }
+    ],
+    "perTeam": {
+     "chance": 0.5981884,
+     "noise": 0.3406268,
+     "booster": 0.2189608
+    },
+    "quick": {
+     "chanceCorrect": 0.5920830293599809,
+     "noiseCorrect": 0.6057620833122936
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.1097048,
+      "gainRate": 0.1097048,
+      "usedPerTeam": 0.1042444,
+      "blockedShare": 0,
+      "uplift": -0.14025696737358692
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.126482,
+      "gainRate": 0.126482,
+      "usedPerTeam": 0.00004,
+      "blockedShare": 0,
+      "uplift": 0.07656284537146381
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.1118824,
+      "gainRate": 0.1118824,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": 0.008447809495884561
+     }
+    ],
+    "isiStepsPerTeam": 0.2084448,
+    "hopGainAvg": 2.7,
+    "rounds": {
+     "avgRemaining": [
+      12.087603599999994,
+      9.337920399999996,
+      6.083671485603195,
+      3.4697717009300737,
+      2.438679556190266
+     ],
+     "gap": [
+      4.807348,
+      7.996888,
+      9.941528725608634,
+      8.86093415305867,
+      7.4092496979017906
+     ],
+     "neighbors": [
+      7.134715199999992,
+      3.150284800000001,
+      3.00628888551092,
+      3.330867261516554,
+      3.4157591514396977
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.999944,
+      0.862728,
+      0.18206
+     ]
+    },
+    "alive": {
+     "mean": 8.312752107269034,
+     "pBelowSlots": 0.0031991543105126994
+    },
+    "cluster": {
+     "meanNearRx": 7.271433112453236,
+     "pAllNear": 0.14576130278504537
+    },
+    "comeback": {
+     "share": 0.2742592,
+     "bottomHalfQualify": 0.2742592
+    }
+   }
+  },
+  {
+   "label": "search-1",
+   "description": "p2/s3 isi3/-2 B+5 N-3 hop∞ A2=C:isi A4=C:orth A8=N C2=B C5=B C7=B C10=N M1=C:hop",
+   "score": 4.293631079812915,
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424242
+    },
+    "finish": {
+     "meanQualRound": 4.286956649018476,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00005,
+      0.16098,
+      0.84602
+     ],
+     "fallbackPct": 0.15398,
+     "fallback4Pct": 0.83902,
+     "qualRoundShare": [
+      0,
+      0,
+      0.09344758654722773,
+      0.5261481778870684,
+      0.38040423556570396
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.035166666666666666,
+      0.30315,
+      0.66098
+     ],
+     "meanFinish": 5.000703333333333
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.287185,
+      0.5340733333333333,
+      0.74968
+     ],
+     "reachRate": [
+      0.3921575,
+      0.66098,
+      0.8515866666666667
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.5534252274850326,
+      "qualifyRate": 0.537116420284093,
+      "meanFinish": 4.95809628799653,
+      "reachRate": 0.6523764773918387,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.11450263340554445,
+      "qualifyRate": 0.5042407302266673,
+      "meanFinish": 5.053561601956588,
+      "reachRate": 0.6254443813600035,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.33207213910942285,
+      "qualifyRate": 0.4369121230283627,
+      "meanFinish": 5.175503959086925,
+      "reachRate": 0.536240177579129,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.33291727674963795,
+      "qualifyRate": 0.5202179816866543,
+      "meanFinish": 5.0106106851883006,
+      "reachRate": 0.6216323391573938,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.3336973828440668,
+      "qualifyRate": 0.48073441789649096,
+      "meanFinish": 5.120478822245933,
+      "reachRate": 0.5882536295301691,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.33338534040629525,
+      "qualifyRate": 0.4992980140397192,
+      "meanFinish": 5.051976960460791,
+      "reachRate": 0.5981580368392632,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 3.948356379016338,
+     "finishRounds": 0.10986813705763243,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "A2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.179966
+     },
+     {
+      "id": "A4",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.18331
+     },
+     {
+      "id": "A8",
+      "type": "noise",
+      "hitRate": 0.176504
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.108816
+     },
+     {
+      "id": "C5",
+      "type": "booster",
+      "hitRate": 0.058882
+     },
+     {
+      "id": "C7",
+      "type": "booster",
+      "hitRate": 0.06068
+     },
+     {
+      "id": "C10",
+      "type": "noise",
+      "hitRate": 0.07117
+     },
+     {
+      "id": "M1",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.234321
+     }
+    ],
+    "perTeam": {
+     "chance": 0.597597,
+     "noise": 0.247674,
+     "booster": 0.228378
+    },
+    "quick": {
+     "chanceCorrect": 0.6022085117562505,
+     "noiseCorrect": 0.5948585640802022
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.105673,
+      "gainRate": 0.105673,
+      "usedPerTeam": 0.0946,
+      "blockedShare": 0,
+      "uplift": -0.010585379765100234
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.140151,
+      "gainRate": 0.140151,
+      "usedPerTeam": 0.000875,
+      "blockedShare": 0,
+      "uplift": 0.0655174214939815
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.108296,
+      "gainRate": 0.108296,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": 0.010114926364299138
+     }
+    ],
+    "isiStepsPerTeam": 0.1892,
+    "hopGainAvg": 2.168,
+    "rounds": {
+     "avgRemaining": [
+      12.335380999999991,
+      9.142681999999999,
+      5.88949647482374,
+      3.363508617196253,
+      2.427730874139498
+     ],
+     "gap": [
+      5.6062,
+      8.39982,
+      9.761538076903845,
+      8.689900121570403,
+      7.448629692167814
+     ],
+     "neighbors": [
+      5.744213999999998,
+      2.785384000000003,
+      3.1410047327763184,
+      3.3694981824978756,
+      3.3660021812768917
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99995,
+      0.83902,
+      0.15398
+     ]
+    },
+    "alive": {
+     "mean": 8.26826535720245,
+     "pBelowSlots": 0.0030988534242330336
+    },
+    "cluster": {
+     "meanNearRx": 7.264792794496584,
+     "pAllNear": 0.1440746081652916
+    },
+    "comeback": {
+     "share": 0.269548,
+     "bottomHalfQualify": 0.269548
+    }
+   }
+  },
+  {
+   "label": "search-2",
+   "description": "p2/s3 isi3/-2 B+5 N-2 hop∞ A2=C:isi A4=C:orth A8=N C2=B C5=B C7=B C10=N M1=C:hop",
+   "score": 4.4593749431849705,
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424242
+    },
+    "finish": {
+     "meanQualRound": 4.2834048065848425,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00005,
+      0.16661,
+      0.85819
+     ],
+     "fallbackPct": 0.14181,
+     "fallback4Pct": 0.83339,
+     "qualRoundShare": [
+      0,
+      0,
+      0.09329081733602981,
+      0.5300135587430983,
+      0.3766956239208719
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.03527,
+      0.30733666666666665,
+      0.6715066666666667
+     ],
+     "meanFinish": 4.985886666666667
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.2864175,
+      0.5347633333333334,
+      0.7500133333333333
+     ],
+     "reachRate": [
+      0.399565,
+      0.6715066666666667,
+      0.85824
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.5564814805554084,
+      "qualifyRate": 0.5390146892574134,
+      "meanFinish": 4.943020490912,
+      "reachRate": 0.6632847645459234,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.1077561332251828,
+      "qualifyRate": 0.5001809929551972,
+      "meanFinish": 5.047800703552102,
+      "reachRate": 0.6280362728445595,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.3357623862194089,
+      "qualifyRate": 0.4355170698432273,
+      "meanFinish": 5.167615405008505,
+      "reachRate": 0.5422523673776991,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.3329199379906986,
+      "qualifyRate": 0.5245771622555352,
+      "meanFinish": 4.996064529696278,
+      "reachRate": 0.6327815663772643,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.33369605440816125,
+      "qualifyRate": 0.47638515072861654,
+      "meanFinish": 5.120492977587023,
+      "reachRate": 0.5880424162135917,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.3333840076011402,
+      "qualifyRate": 0.49931900136199725,
+      "meanFinish": 5.045095909808181,
+      "reachRate": 0.6034067931864137,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 4.819201152691866,
+     "finishRounds": 0.12442844789074581,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "A2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.180857
+     },
+     {
+      "id": "A4",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.184137
+     },
+     {
+      "id": "A8",
+      "type": "noise",
+      "hitRate": 0.17137
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.109983
+     },
+     {
+      "id": "C5",
+      "type": "booster",
+      "hitRate": 0.05947
+     },
+     {
+      "id": "C7",
+      "type": "booster",
+      "hitRate": 0.060107
+     },
+     {
+      "id": "C10",
+      "type": "noise",
+      "hitRate": 0.069424
+     },
+     {
+      "id": "M1",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.237769
+     }
+    ],
+    "perTeam": {
+     "chance": 0.602763,
+     "noise": 0.240794,
+     "booster": 0.22956
+    },
+    "quick": {
+     "chanceCorrect": 0.6021653618420507,
+     "noiseCorrect": 0.5943752751314402
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.106179,
+      "gainRate": 0.106179,
+      "usedPerTeam": 0.095234,
+      "blockedShare": 0,
+      "uplift": -0.008944195414391731
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.142177,
+      "gainRate": 0.142177,
+      "usedPerTeam": 0.000846,
+      "blockedShare": 0,
+      "uplift": 0.061086814439509786
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.108867,
+      "gainRate": 0.108867,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": 0.013435026654993966
+     }
+    ],
+    "isiStepsPerTeam": 0.190468,
+    "hopGainAvg": 2.1725768321513,
+    "rounds": {
+     "avgRemaining": [
+      12.336814999999993,
+      9.121501999999994,
+      5.826000300015,
+      3.277881904030524,
+      2.3388689091037302
+     ],
+     "gap": [
+      5.61677,
+      8.41649,
+      9.729436471823592,
+      8.502405836403124,
+      7.18228615753473
+     ],
+     "neighbors": [
+      5.748129999999999,
+      2.7972600000000023,
+      3.2012732858865136,
+      3.4638366686303472,
+      3.4840869685908817
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99995,
+      0.83339,
+      0.14181
+     ]
+    },
+    "alive": {
+     "mean": 8.342000743949411,
+     "pBelowSlots": 0.0023878376270413614
+    },
+    "cluster": {
+     "meanNearRx": 7.322469383236812,
+     "pAllNear": 0.15615423158041924
+    },
+    "comeback": {
+     "share": 0.26743,
+     "bottomHalfQualify": 0.26743
+    }
+   }
+  },
+  {
+   "label": "search-3",
+   "description": "p2/s3 isi3/-2 B+5 N-3 hop∞ A2=C:isi A4=C:orth A8=N C2=B C5=B C7=B C9=N M3=C:hop",
+   "score": 4.507984808556875,
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424242
+    },
+    "finish": {
+     "meanQualRound": 4.286298440384599,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00005,
+      0.16331,
+      0.85012
+     ],
+     "fallbackPct": 0.14988,
+     "fallback4Pct": 0.8366899999999999,
+     "qualRoundShare": [
+      0,
+      0,
+      0.09319892405750611,
+      0.5273037115003885,
+      0.3794973644421054
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.03533666666666667,
+      0.30426333333333333,
+      0.6633066666666667
+     ],
+     "meanFinish": 4.997093333333333
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.288175,
+      0.5339466666666667,
+      0.7484866666666666
+     ],
+     "reachRate": [
+      0.3952775,
+      0.6633066666666667,
+      0.8511766666666667
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.5532521150524525,
+      "qualifyRate": 0.5354256263411266,
+      "meanFinish": 4.958031212658608,
+      "reachRate": 0.6521214882143561,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.11457138370787022,
+      "qualifyRate": 0.504054820828423,
+      "meanFinish": 5.051573479987779,
+      "reachRate": 0.6288071232159225,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.3321765012396773,
+      "qualifyRate": 0.43981404815598757,
+      "meanFinish": 5.168088303038879,
+      "reachRate": 0.5410156896868386,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.3326819218306197,
+      "qualifyRate": 0.5185995755196277,
+      "meanFinish": 5.011507867316815,
+      "reachRate": 0.6217915957696262,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.3337920550466056,
+      "qualifyRate": 0.47952371820992834,
+      "meanFinish": 5.122528104700496,
+      "reachRate": 0.586477384405187,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.33352602312277474,
+      "qualifyRate": 0.5021200290267057,
+      "meanFinish": 5.046346773177884,
+      "reachRate": 0.6030957821317836,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 3.9075857309699313,
+     "finishRounds": 0.1110202373836815,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "A2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.179733
+     },
+     {
+      "id": "A4",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.183334
+     },
+     {
+      "id": "A8",
+      "type": "noise",
+      "hitRate": 0.175764
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.108714
+     },
+     {
+      "id": "C5",
+      "type": "booster",
+      "hitRate": 0.058762
+     },
+     {
+      "id": "C7",
+      "type": "booster",
+      "hitRate": 0.062577
+     },
+     {
+      "id": "C9",
+      "type": "noise",
+      "hitRate": 0.065216
+     },
+     {
+      "id": "M3",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.186446
+     }
+    ],
+    "perTeam": {
+     "chance": 0.549513,
+     "noise": 0.24098,
+     "booster": 0.230053
+    },
+    "quick": {
+     "chanceCorrect": 0.6054852205498323,
+     "noiseCorrect": 0.5966055274296622
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.105674,
+      "gainRate": 0.105674,
+      "usedPerTeam": 0.094717,
+      "blockedShare": 0,
+      "uplift": -0.012517309242657669
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.113558,
+      "gainRate": 0.113558,
+      "usedPerTeam": 0.000008,
+      "blockedShare": 0,
+      "uplift": 0.09400463641974795
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.108523,
+      "gainRate": 0.108523,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": 0.00667833255233935
+     }
+    ],
+    "isiStepsPerTeam": 0.189434,
+    "hopGainAvg": 2.375,
+    "rounds": {
+     "avgRemaining": [
+      12.335380999999991,
+      9.141471000000003,
+      5.8834811740587005,
+      3.3555617970813563,
+      2.4147784894582345
+     ],
+     "gap": [
+      5.6062,
+      8.405,
+      9.819630981549077,
+      8.72986410737549,
+      7.46697357886309
+     ],
+     "neighbors": [
+      5.744213999999998,
+      2.7789340000000027,
+      3.1379282932400594,
+      3.3715871991428084,
+      3.3891754673580134
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99995,
+      0.83669,
+      0.14988
+     ]
+    },
+    "alive": {
+     "mean": 8.263765552355114,
+     "pBelowSlots": 0.0030716274844924643
+    },
+    "cluster": {
+     "meanNearRx": 7.282360137392368,
+     "pAllNear": 0.14567355196913376
+    },
+    "comeback": {
+     "share": 0.26832,
+     "bottomHalfQualify": 0.26832
+    }
+   }
+  },
+  {
+   "label": "search-4",
+   "description": "p2/s3 isi3/-2 B+5 N-3 hop∞ A2=C:isi A4=C:orth A9=N C2=B C5=B C7=B C9=N M3=C:hop",
+   "score": 4.5341157434626,
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424242
+    },
+    "finish": {
+     "meanQualRound": 4.288702990077657,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00007,
+      0.15953,
+      0.84831
+     ],
+     "fallbackPct": 0.15169,
+     "fallback4Pct": 0.84047,
+     "qualRoundShare": [
+      0,
+      0,
+      0.09333021257387422,
+      0.5246365847745947,
+      0.38203320265153096
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.035263333333333334,
+      0.30254,
+      0.6629633333333333
+     ],
+     "meanFinish": 4.999233333333334
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.28785,
+      0.5335766666666667,
+      0.74929
+     ],
+     "reachRate": [
+      0.3945075,
+      0.6629633333333333,
+      0.8514
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.5532661170547388,
+      "qualifyRate": 0.5350668038113694,
+      "meanFinish": 4.9609227982580935,
+      "reachRate": 0.6520796764927592,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.1146633968657518,
+      "qualifyRate": 0.504679581672438,
+      "meanFinish": 5.0532940242657896,
+      "reachRate": 0.6272471150575244,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.3320704860795094,
+      "qualifyRate": 0.44017432527264677,
+      "meanFinish": 5.168795535249064,
+      "reachRate": 0.5405589371820627,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.33271124499678956,
+      "qualifyRate": 0.5168518384916914,
+      "meanFinish": 5.016178486400692,
+      "reachRate": 0.6203797224827453,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.3338834114444251,
+      "qualifyRate": 0.47935513246024997,
+      "meanFinish": 5.123557675026061,
+      "reachRate": 0.5868510286487976,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.33340534355878537,
+      "qualifyRate": 0.5040706987682911,
+      "meanFinish": 5.04488867823781,
+      "reachRate": 0.604455270309997,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 3.7496706031441396,
+     "finishRounds": 0.10737918862536855,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "A2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.179531
+     },
+     {
+      "id": "A4",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.183205
+     },
+     {
+      "id": "A9",
+      "type": "noise",
+      "hitRate": 0.162559
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.108649
+     },
+     {
+      "id": "C5",
+      "type": "booster",
+      "hitRate": 0.05868
+     },
+     {
+      "id": "C7",
+      "type": "booster",
+      "hitRate": 0.062376
+     },
+     {
+      "id": "C9",
+      "type": "noise",
+      "hitRate": 0.065405
+     },
+     {
+      "id": "M3",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.190973
+     }
+    ],
+    "perTeam": {
+     "chance": 0.553709,
+     "noise": 0.227964,
+     "booster": 0.229705
+    },
+    "quick": {
+     "chanceCorrect": 0.6061414930947483,
+     "noiseCorrect": 0.5999236721587619
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.105484,
+      "gainRate": 0.105484,
+      "usedPerTeam": 0.09397,
+      "blockedShare": 0,
+      "uplift": -0.010477448962579015
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.116684,
+      "gainRate": 0.116684,
+      "usedPerTeam": 0.000008,
+      "blockedShare": 0,
+      "uplift": 0.09747045603591054
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.108384,
+      "gainRate": 0.108384,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": 0.008258316756510089
+     }
+    ],
+    "isiStepsPerTeam": 0.18794,
+    "hopGainAvg": 2,
+    "rounds": {
+     "avgRemaining": [
+      12.335380999999991,
+      9.118526999999993,
+      5.849587471122983,
+      3.325965233738267,
+      2.396011602610587
+     ],
+     "gap": [
+      5.6062,
+      8.39623,
+      9.818887322112548,
+      8.636596190226896,
+      7.347880545850089
+     ],
+     "neighbors": [
+      5.744213999999998,
+      2.7596200000000017,
+      3.142531755000626,
+      3.367423574980065,
+      3.3790214378321703
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99993,
+      0.84047,
+      0.15169
+     ]
+    },
+    "alive": {
+     "mean": 8.275048484776375,
+     "pBelowSlots": 0.0029031375301914403
+    },
+    "cluster": {
+     "meanNearRx": 7.3408895333074,
+     "pAllNear": 0.15915172519479906
+    },
+    "comeback": {
+     "share": 0.268048,
+     "bottomHalfQualify": 0.268048
+    }
+   }
+  },
+  {
+   "label": "search-5",
+   "description": "p2/s3 isi3/-2 B+5 N-3 hop∞ A2=C:isi A4=C:orth A7=N C2=B C5=B C7=B C9=N M3=C:hop",
+   "score": 4.573338568365016,
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424242
+    },
+    "finish": {
+     "meanQualRound": 4.284401790249786,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00004,
+      0.16195,
+      0.84718
+     ],
+     "fallbackPct": 0.15282,
+     "fallback4Pct": 0.83805,
+     "qualRoundShare": [
+      0,
+      0,
+      0.09514412514188837,
+      0.525309959466437,
+      0.37954591539167465
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.035826666666666666,
+      0.30445,
+      0.6623266666666666
+     ],
+     "meanFinish": 4.997396666666667
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.2874725,
+      0.5344166666666667,
+      0.7489533333333334
+     ],
+     "reachRate": [
+      0.3950825,
+      0.6623266666666666,
+      0.8509466666666666
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.5534268003128456,
+      "qualifyRate": 0.5353738890314559,
+      "meanFinish": 4.958161801115396,
+      "reachRate": 0.6511025651220033,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.11467574265842813,
+      "qualifyRate": 0.5042779023016074,
+      "meanFinish": 5.051640080586783,
+      "reachRate": 0.6286466827723947,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.3318974570287262,
+      "qualifyRate": 0.4397572389852011,
+      "meanFinish": 5.168010149194362,
+      "reachRate": 0.5413606791040504,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.33277925797908514,
+      "qualifyRate": 0.5171518390065337,
+      "meanFinish": 5.01323579796474,
+      "reachRate": 0.619185295160699,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.3334913548242561,
+      "qualifyRate": 0.48085747017508085,
+      "meanFinish": 5.120499271246318,
+      "reachRate": 0.5884251123120385,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.33372938719665873,
+      "qualifyRate": 0.5022296544035675,
+      "meanFinish": 5.047625897555771,
+      "reachRate": 0.6020846069934429,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 3.6294368831452872,
+     "finishRounds": 0.10726347328157804,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "A2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.180028
+     },
+     {
+      "id": "A4",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.186571
+     },
+     {
+      "id": "A7",
+      "type": "noise",
+      "hitRate": 0.188278
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.108543
+     },
+     {
+      "id": "C5",
+      "type": "booster",
+      "hitRate": 0.058544
+     },
+     {
+      "id": "C7",
+      "type": "booster",
+      "hitRate": 0.062659
+     },
+     {
+      "id": "C9",
+      "type": "noise",
+      "hitRate": 0.06515
+     },
+     {
+      "id": "M3",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.188962
+     }
+    ],
+    "perTeam": {
+     "chance": 0.555561,
+     "noise": 0.253428,
+     "booster": 0.229746
+    },
+    "quick": {
+     "chanceCorrect": 0.6048084728769658,
+     "noiseCorrect": 0.593545306753792
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.105631,
+      "gainRate": 0.105631,
+      "usedPerTeam": 0.094086,
+      "blockedShare": 0,
+      "uplift": -0.013536068229126886
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.115297,
+      "gainRate": 0.115297,
+      "usedPerTeam": 0.000011,
+      "blockedShare": 0,
+      "uplift": 0.09603441620361347
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.109807,
+      "gainRate": 0.109807,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": 0.004905454085640793
+     }
+    ],
+    "isiStepsPerTeam": 0.188172,
+    "hopGainAvg": 2.090909090909091,
+    "rounds": {
+     "avgRemaining": [
+      12.335380999999991,
+      9.169313000000002,
+      5.913861554462177,
+      3.372981325696557,
+      2.4370370370370362
+     ],
+     "gap": [
+      5.6062,
+      8.43066,
+      9.852614104564182,
+      8.83096473957401,
+      7.56386598612747
+     ],
+     "neighbors": [
+      5.744213999999998,
+      2.769420000000003,
+      3.1135952501592103,
+      3.3663615744410493,
+      3.3889821098792448
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99996,
+      0.83805,
+      0.15282
+     ]
+    },
+    "alive": {
+     "mean": 8.228757234055248,
+     "pBelowSlots": 0.003699063301712308
+    },
+    "cluster": {
+     "meanNearRx": 7.264914185887297,
+     "pAllNear": 0.14463278169928467
+    },
+    "comeback": {
+     "share": 0.26791,
+     "bottomHalfQualify": 0.26791
+    }
+   }
+  },
+  {
+   "label": "search-6",
+   "description": "p2/s3 isi2/-2 B+5 N-3 hop∞ A2=C:isi A4=C:orth A8=N C2=B C5=B C7=B C10=N M1=C:hop",
+   "score": 4.633801475866856,
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424242
+    },
+    "finish": {
+     "meanQualRound": 4.280955367408801,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00006,
+      0.16211,
+      0.84609
+     ],
+     "fallbackPct": 0.15391,
+     "fallback4Pct": 0.83789,
+     "qualRoundShare": [
+      0,
+      0,
+      0.09584613776523467,
+      0.5273523570607296,
+      0.37680150517403577
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.03608666666666667,
+      0.3053133333333333,
+      0.6603333333333333
+     ],
+     "meanFinish": 4.998266666666667
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.28687,
+      0.53424,
+      0.7499333333333333
+     ],
+     "reachRate": [
+      0.391805,
+      0.6603333333333333,
+      0.8514833333333334
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.5532436254673258,
+      "qualifyRate": 0.5367745691073372,
+      "meanFinish": 4.955084840749592,
+      "reachRate": 0.6513213318533356,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.11456856010673729,
+      "qualifyRate": 0.5053339153208206,
+      "meanFinish": 5.051575731121781,
+      "reachRate": 0.6259799214316892,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.332187814425937,
+      "qualifyRate": 0.43715789410298256,
+      "meanFinish": 5.173180102007021,
+      "reachRate": 0.5367713031487291,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.33283926614019504,
+      "qualifyRate": 0.5204300558303335,
+      "meanFinish": 5.007301814335595,
+      "reachRate": 0.6216818812839173,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.3336993831161038,
+      "qualifyRate": 0.4802879629796136,
+      "meanFinish": 5.119411126496311,
+      "reachRate": 0.5880762706276562,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.33346135074370115,
+      "qualifyRate": 0.49953811454759217,
+      "meanFinish": 5.050375506874295,
+      "reachRate": 0.5984115939247067,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 4.01420928507199,
+     "finishRounds": 0.11210931216071529,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "A2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.180237
+     },
+     {
+      "id": "A4",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.184164
+     },
+     {
+      "id": "A8",
+      "type": "noise",
+      "hitRate": 0.175245
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.108804
+     },
+     {
+      "id": "C5",
+      "type": "booster",
+      "hitRate": 0.058873
+     },
+     {
+      "id": "C7",
+      "type": "booster",
+      "hitRate": 0.060794
+     },
+     {
+      "id": "C10",
+      "type": "noise",
+      "hitRate": 0.071147
+     },
+     {
+      "id": "M1",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.232579
+     }
+    ],
+    "perTeam": {
+     "chance": 0.59698,
+     "noise": 0.246392,
+     "booster": 0.228471
+    },
+    "quick": {
+     "chanceCorrect": 0.6018158062246641,
+     "noiseCorrect": 0.5943009513295886
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.105784,
+      "gainRate": 0.105784,
+      "usedPerTeam": 0.092482,
+      "blockedShare": 0,
+      "uplift": -0.011042216408751993
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.138939,
+      "gainRate": 0.138939,
+      "usedPerTeam": 0.000857,
+      "blockedShare": 0,
+      "uplift": 0.06608163507013032
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.108787,
+      "gainRate": 0.108787,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": 0.007060831094591259
+     }
+    ],
+    "isiStepsPerTeam": 0.184962,
+    "hopGainAvg": 2.1528588098016335,
+    "rounds": {
+     "avgRemaining": [
+      12.335380999999991,
+      9.140569,
+      5.8834470068204086,
+      3.3675017007005703,
+      2.434539666038594
+     ],
+     "gap": [
+      5.6062,
+      8.42979,
+      9.812858771526292,
+      8.711955029896526,
+      7.465596777337405
+     ],
+     "neighbors": [
+      5.744213999999998,
+      2.7729680000000028,
+      3.123572136550413,
+      3.343251927034406,
+      3.348385316918876
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99994,
+      0.83789,
+      0.15391
+     ]
+    },
+    "alive": {
+     "mean": 8.253553569084247,
+     "pBelowSlots": 0.0032223800260177352
+    },
+    "cluster": {
+     "meanNearRx": 7.249547920433996,
+     "pAllNear": 0.1410724627403704
+    },
+    "comeback": {
+     "share": 0.26774,
+     "bottomHalfQualify": 0.26774
+    }
+   }
+  },
+  {
+   "label": "search-7",
+   "description": "p2/s3 isi3/-2 B+5 N-3 hop∞ A2=C:isi A4=C:orth A7=N C2=B C5=B C7=B C10=N M3=C:hop",
+   "score": 4.636082690597403,
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424242
+    },
+    "finish": {
+     "meanQualRound": 4.284163855946034,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00007,
+      0.16078,
+      0.84565
+     ],
+     "fallbackPct": 0.15435,
+     "fallback4Pct": 0.83922,
+     "qualRoundShare": [
+      0,
+      0,
+      0.09604922876057682,
+      0.5237376865328122,
+      0.38021308470661097
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.036153333333333336,
+      0.30333,
+      0.6608033333333333
+     ],
+     "meanFinish": 4.999713333333333
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.28658,
+      0.5351266666666666,
+      0.7494333333333333
+     ],
+     "reachRate": [
+      0.392375,
+      0.6608033333333333,
+      0.85085
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.5533647042350718,
+      "qualifyRate": 0.5369986806195666,
+      "meanFinish": 4.957078566393753,
+      "reachRate": 0.6513166693777224,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.11467348091992419,
+      "qualifyRate": 0.505791135376511,
+      "meanFinish": 5.051291667393466,
+      "reachRate": 0.6286085576235413,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.3319618148450041,
+      "qualifyRate": 0.4365278066504578,
+      "meanFinish": 5.175610167602142,
+      "reachRate": 0.5362906991808193,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.3328666013241854,
+      "qualifyRate": 0.5195120485547744,
+      "meanFinish": 5.012204795384893,
+      "reachRate": 0.6198726038098672,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.3332926609725362,
+      "qualifyRate": 0.48230436374330077,
+      "meanFinish": 5.122282037893928,
+      "reachRate": 0.5882381183870175,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.33384073770327843,
+      "qualifyRate": 0.4984211819265775,
+      "meanFinish": 5.054938075579549,
+      "reachRate": 0.5979316584480249,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 3.720768481147363,
+     "finishRounds": 0.1100772425090355,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "A2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.180041
+     },
+     {
+      "id": "A4",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.186339
+     },
+     {
+      "id": "A7",
+      "type": "noise",
+      "hitRate": 0.187594
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.108666
+     },
+     {
+      "id": "C5",
+      "type": "booster",
+      "hitRate": 0.058603
+     },
+     {
+      "id": "C7",
+      "type": "booster",
+      "hitRate": 0.061151
+     },
+     {
+      "id": "C10",
+      "type": "noise",
+      "hitRate": 0.071092
+     },
+     {
+      "id": "M3",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.188035
+     }
+    ],
+    "perTeam": {
+     "chance": 0.554415,
+     "noise": 0.258686,
+     "booster": 0.22842
+    },
+    "quick": {
+     "chanceCorrect": 0.6053281386686868,
+     "noiseCorrect": 0.5924131959209235
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.105698,
+      "gainRate": 0.105698,
+      "usedPerTeam": 0.094021,
+      "blockedShare": 0,
+      "uplift": -0.012628206849302747
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.115026,
+      "gainRate": 0.115026,
+      "usedPerTeam": 0.000011,
+      "blockedShare": 0,
+      "uplift": 0.09383037322567342
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.109569,
+      "gainRate": 0.109569,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": 0.005010736994996279
+     }
+    ],
+    "isiStepsPerTeam": 0.188042,
+    "hopGainAvg": 2,
+    "rounds": {
+     "avgRemaining": [
+      12.335380999999991,
+      9.170194999999993,
+      5.9168001760123206,
+      3.3804139558161133,
+      2.455685131195336
+     ],
+     "gap": [
+      5.6062,
+      8.42201,
+      9.806446451251588,
+      8.795715068754319,
+      7.6044703595724
+     ],
+     "neighbors": [
+      5.744213999999998,
+      2.7753540000000028,
+      3.1151364881255974,
+      3.357513817630359,
+      3.3591263413906742
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99993,
+      0.83922,
+      0.15435
+     ]
+    },
+    "alive": {
+     "mean": 8.231190867710493,
+     "pBelowSlots": 0.0036224112866709564
+    },
+    "cluster": {
+     "meanNearRx": 7.2509312363270855,
+     "pAllNear": 0.1417489505114409
+    },
+    "comeback": {
+     "share": 0.268788,
+     "bottomHalfQualify": 0.268788
+    }
+   }
+  },
+  {
+   "label": "search-8",
+   "description": "p2/s3 isi3/-2 B+5 N-3 hop∞ A2=C:isi A6=C:orth A9=N C2=B C5=B C7=B C9=N M3=C:hop",
+   "score": 4.678982817538293,
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424242
+    },
+    "finish": {
+     "meanQualRound": 4.290283681718057,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00004,
+      0.16212,
+      0.8478
+     ],
+     "fallbackPct": 0.1522,
+     "fallback4Pct": 0.83788,
+     "qualRoundShare": [
+      0,
+      0,
+      0.0897273529030667,
+      0.5302616124758095,
+      0.3800110346211238
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.03385333333333333,
+      0.30388333333333334,
+      0.66303
+     ],
+     "meanFinish": 4.999233333333334
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.28657,
+      0.5355733333333333,
+      0.749
+     ],
+     "reachRate": [
+      0.394545,
+      0.66303,
+      0.8515066666666666
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.5534167988526325,
+      "qualifyRate": 0.5352209145980019,
+      "meanFinish": 4.964056197319531,
+      "reachRate": 0.6514233666343777,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.11464373798574592,
+      "qualifyRate": 0.5057883395709563,
+      "meanFinish": 5.047798511694452,
+      "reachRate": 0.6303314227886972,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.3319394631616216,
+      "qualifyRate": 0.4394997152679645,
+      "meanFinish": 5.16707895061933,
+      "reachRate": 0.5407498244905707,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.33307396109416415,
+      "qualifyRate": 0.5164732872105313,
+      "meanFinish": 5.0191157394061685,
+      "reachRate": 0.6193667723647545,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.33292793919087865,
+      "qualifyRate": 0.4809029133796766,
+      "meanFinish": 5.121509982636281,
+      "reachRate": 0.5876026652407188,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.33399809971495725,
+      "qualifyRate": 0.5028327763603915,
+      "meanFinish": 5.044593769089799,
+      "reachRate": 0.6037526800579731,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 3.5570373830854707,
+     "finishRounds": 0.10239424323011281,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "A2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.179821
+     },
+     {
+      "id": "A6",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.169169
+     },
+     {
+      "id": "A9",
+      "type": "noise",
+      "hitRate": 0.16235
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.108642
+     },
+     {
+      "id": "C5",
+      "type": "booster",
+      "hitRate": 0.058842
+     },
+     {
+      "id": "C7",
+      "type": "booster",
+      "hitRate": 0.062234
+     },
+     {
+      "id": "C9",
+      "type": "noise",
+      "hitRate": 0.065344
+     },
+     {
+      "id": "M3",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.191713
+     }
+    ],
+    "perTeam": {
+     "chance": 0.540703,
+     "noise": 0.227694,
+     "booster": 0.229718
+    },
+    "quick": {
+     "chanceCorrect": 0.604910644105914,
+     "noiseCorrect": 0.5998489200418105
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.105558,
+      "gainRate": 0.105558,
+      "usedPerTeam": 0.094206,
+      "blockedShare": 0,
+      "uplift": -0.003191067850771533
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.117328,
+      "gainRate": 0.117328,
+      "usedPerTeam": 0.000007,
+      "blockedShare": 0,
+      "uplift": 0.10121533026811702
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.09931,
+      "gainRate": 0.09931,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": -0.023643770373861818
+     }
+    ],
+    "isiStepsPerTeam": 0.188412,
+    "hopGainAvg": 2,
+    "rounds": {
+     "avgRemaining": [
+      12.335513000000002,
+      9.124638000000004,
+      5.849317972718906,
+      3.3298467560987257,
+      2.4001314060446792
+     ],
+     "gap": [
+      5.60761,
+      8.35858,
+      9.804292171686868,
+      8.650928533918938,
+      7.342641261498029
+     ],
+     "neighbors": [
+      5.746111999999999,
+      2.763704,
+      3.1485108690061883,
+      3.3517552424448436,
+      3.3697742631875363
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99996,
+      0.83788,
+      0.1522
+     ]
+    },
+    "alive": {
+     "mean": 8.26432185993221,
+     "pBelowSlots": 0.0030553301188714376
+    },
+    "cluster": {
+     "meanNearRx": 7.334701580561453,
+     "pAllNear": 0.15753715498938428
+    },
+    "comeback": {
+     "share": 0.26797,
+     "bottomHalfQualify": 0.26797
+    }
+   }
+  },
+  {
+   "label": "search-9",
+   "description": "p2/s3 isi3/-2 B+5 N-3 hop∞ A2=C:orth A4=C:isi A8=N C2=B C5=B C7=B C9=N M3=C:hop",
+   "score": 4.704959978439866,
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424242
+    },
+    "finish": {
+     "meanQualRound": 4.28115332105863,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00003,
+      0.1697,
+      0.85174
+     ],
+     "fallbackPct": 0.14826,
+     "fallback4Pct": 0.8303,
+     "qualRoundShare": [
+      0,
+      0,
+      0.09254249176467641,
+      0.5337616954120167,
+      0.3736958128233069
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.035353333333333334,
+      0.30923,
+      0.6653166666666667
+     ],
+     "meanFinish": 4.9901
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.2865975,
+      0.53518,
+      0.7493566666666667
+     ],
+     "reachRate": [
+      0.397045,
+      0.6653166666666667,
+      0.8526966666666667
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.5534654851679235,
+      "qualifyRate": 0.540447208829971,
+      "meanFinish": 4.943090562137234,
+      "reachRate": 0.6575946713698165,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.11462004680655291,
+      "qualifyRate": 0.4964835433318209,
+      "meanFinish": 5.060530173466895,
+      "reachRate": 0.6251701511291055,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.33191446802552355,
+      "qualifyRate": 0.43397977509130137,
+      "meanFinish": 5.176012752058047,
+      "reachRate": 0.5383767039907433,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.3334666829353181,
+      "qualifyRate": 0.5218729193284267,
+      "meanFinish": 5.00033590661796,
+      "reachRate": 0.6267717574514285,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.3332826604845791,
+      "qualifyRate": 0.47833106271118286,
+      "meanFinish": 5.124996248972218,
+      "reachRate": 0.5856524687764447,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.3332506565801028,
+      "qualifyRate": 0.49996698778548065,
+      "meanFinish": 5.050868821463942,
+      "reachRate": 0.601236457489271,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 4.354185661724386,
+     "finishRounds": 0.12466034235425827,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "A2",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.179114
+     },
+     {
+      "id": "A4",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.180897
+     },
+     {
+      "id": "A8",
+      "type": "noise",
+      "hitRate": 0.174355
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.108517
+     },
+     {
+      "id": "C5",
+      "type": "booster",
+      "hitRate": 0.058734
+     },
+     {
+      "id": "C7",
+      "type": "booster",
+      "hitRate": 0.062225
+     },
+     {
+      "id": "C9",
+      "type": "noise",
+      "hitRate": 0.065196
+     },
+     {
+      "id": "M3",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.190483
+     }
+    ],
+    "perTeam": {
+     "chance": 0.550494,
+     "noise": 0.239551,
+     "booster": 0.229476
+    },
+    "quick": {
+     "chanceCorrect": 0.6066442141058758,
+     "noiseCorrect": 0.5956351674591215
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.10717,
+      "gainRate": 0.10717,
+      "usedPerTeam": 0.086058,
+      "blockedShare": 0,
+      "uplift": -0.0008542161002624726
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.116078,
+      "gainRate": 0.116078,
+      "usedPerTeam": 0.000028,
+      "blockedShare": 0,
+      "uplift": 0.09219926553944344
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.105407,
+      "gainRate": 0.105407,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": 0.003731632629217119
+     }
+    ],
+    "isiStepsPerTeam": 0.172116,
+    "hopGainAvg": 2.642857142857143,
+    "rounds": {
+     "avgRemaining": [
+      12.335380999999991,
+      9.080222000000001,
+      5.838675160254808,
+      3.341501866795133,
+      2.413422366113583
+     ],
+     "gap": [
+      5.6062,
+      8.44928,
+      9.823074692240768,
+      8.725051186318199,
+      7.451908808849319
+     ],
+     "neighbors": [
+      5.744213999999998,
+      2.753852000000002,
+      3.1515531577058407,
+      3.3700623125319065,
+      3.399334020671535
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99997,
+      0.8303,
+      0.14826
+     ]
+    },
+    "alive": {
+     "mean": 8.281271829459232,
+     "pBelowSlots": 0.0027941707816451886
+    },
+    "cluster": {
+     "meanNearRx": 7.2786061474158785,
+     "pAllNear": 0.14603047878460562
+    },
+    "comeback": {
+     "share": 0.268966,
+     "bottomHalfQualify": 0.268966
+    }
+   }
+  },
+  {
+   "label": "search-10",
+   "description": "p2/s3 isi3/-2 B+5 N-3 hop∞ A2=C:isi A4=C:orth A7=N C2=B C5=B C7=B C11=N M3=C:hop",
+   "score": 4.7378156548256225,
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424242
+    },
+    "finish": {
+     "meanQualRound": 4.28463372712561,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00007,
+      0.16129,
+      0.84284
+     ],
+     "fallbackPct": 0.15716,
+     "fallback4Pct": 0.8387100000000001,
+     "qualRoundShare": [
+      0,
+      0,
+      0.09487860688393282,
+      0.5256090591065249,
+      0.3795123340095423
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.03581,
+      0.30424,
+      0.6597033333333333
+     ],
+     "meanFinish": 5.0002466666666665
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.2857575,
+      0.53511,
+      0.7505466666666667
+     ],
+     "reachRate": [
+      0.39116,
+      0.6597033333333333,
+      0.85058
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.553416623661334,
+      "qualifyRate": 0.5369062506776929,
+      "meanFinish": 4.958107736903359,
+      "reachRate": 0.6502363792766939,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.11468922146346147,
+      "qualifyRate": 0.5052626989317637,
+      "meanFinish": 5.050725964682799,
+      "reachRate": 0.6282537606278613,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.3318941548752045,
+      "qualifyRate": 0.4368289573998126,
+      "meanFinish": 5.178431413909171,
+      "reachRate": 0.5354690179085317,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.33280458312413363,
+      "qualifyRate": 0.5195941722363803,
+      "meanFinish": 5.010746742318604,
+      "reachRate": 0.6201375198345915,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.3335286975342104,
+      "qualifyRate": 0.4811200806055008,
+      "meanFinish": 5.12199378665931,
+      "reachRate": 0.588941932852739,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.333666719341656,
+      "qualifyRate": 0.49956536596186013,
+      "meanFinish": 5.0568621220931975,
+      "reachRate": 0.5974029866852111,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 3.847409163087945,
+     "finishRounds": 0.11124704434070587,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "A2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.180119
+     },
+     {
+      "id": "A4",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.186338
+     },
+     {
+      "id": "A7",
+      "type": "noise",
+      "hitRate": 0.188058
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.108672
+     },
+     {
+      "id": "C5",
+      "type": "booster",
+      "hitRate": 0.058586
+     },
+     {
+      "id": "C7",
+      "type": "booster",
+      "hitRate": 0.059978
+     },
+     {
+      "id": "C11",
+      "type": "noise",
+      "hitRate": 0.069453
+     },
+     {
+      "id": "M3",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.187953
+     }
+    ],
+    "perTeam": {
+     "chance": 0.55441,
+     "noise": 0.257511,
+     "booster": 0.227236
+    },
+    "quick": {
+     "chanceCorrect": 0.6048375750798146,
+     "noiseCorrect": 0.5920484950157469
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.105662,
+      "gainRate": 0.105662,
+      "usedPerTeam": 0.094152,
+      "blockedShare": 0,
+      "uplift": -0.013713541952489585
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.114673,
+      "gainRate": 0.114673,
+      "usedPerTeam": 0.000011,
+      "blockedShare": 0,
+      "uplift": 0.09496839400242989
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.109695,
+      "gainRate": 0.109695,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": 0.005441436920927079
+     }
+    ],
+    "isiStepsPerTeam": 0.188304,
+    "hopGainAvg": 2,
+    "rounds": {
+     "avgRemaining": [
+      12.335380999999991,
+      9.161201,
+      5.907519526366844,
+      3.381259314900263,
+      2.4581191142784427
+     ],
+     "gap": [
+      5.6062,
+      8.41255,
+      9.762103347234307,
+      8.744178559931322,
+      7.5723466530923895
+     ],
+     "neighbors": [
+      5.744213999999998,
+      2.7742040000000032,
+      3.1206441673139347,
+      3.345834154227405,
+      3.3420907618158826
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99993,
+      0.83871,
+      0.15716
+     ]
+    },
+    "alive": {
+     "mean": 8.146594174386856,
+     "pBelowSlots": 0.004506921343491791
+    },
+    "cluster": {
+     "meanNearRx": 7.244886336671255,
+     "pAllNear": 0.13917232214892505
+    },
+    "comeback": {
+     "share": 0.270318,
+     "bottomHalfQualify": 0.270318
+    }
+   }
+  },
+  {
+   "label": "search-11",
+   "description": "p2/s3 isi3/-2 B+5 N-2 hop∞ A2=C:isi A4=C:orth A8=N C2=B C5=B C7=B C9=N M3=C:hop",
+   "score": 4.741763527682377,
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424242
+    },
+    "finish": {
+     "meanQualRound": 4.282913235223723,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00005,
+      0.16806,
+      0.86087
+     ],
+     "fallbackPct": 0.13913,
+     "fallback4Pct": 0.83194,
+     "qualRoundShare": [
+      0,
+      0,
+      0.09302514344940403,
+      0.5310364778774691,
+      0.37593837867312685
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.03551666666666667,
+      0.30758,
+      0.67224
+     ],
+     "meanFinish": 4.984663333333334
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.28747,
+      0.5344133333333333,
+      0.74896
+     ],
+     "reachRate": [
+      0.40183,
+      0.67224,
+      0.85831
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.5563284492673901,
+      "qualifyRate": 0.5383311310663467,
+      "meanFinish": 4.942832744563996,
+      "reachRate": 0.6632706810847738,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.10779916987548133,
+      "qualifyRate": 0.49993969364371005,
+      "meanFinish": 5.045740051770688,
+      "reachRate": 0.6319456686119332,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.33587238085712856,
+      "qualifyRate": 0.4367522080149603,
+      "meanFinish": 5.163166796695869,
+      "reachRate": 0.5444640315405185,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.33263057671381935,
+      "qualifyRate": 0.5227067723429588,
+      "meanFinish": 4.997444285422204,
+      "reachRate": 0.6326987143252312,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.3338347308455482,
+      "qualifyRate": 0.47635054165468316,
+      "meanFinish": 5.1215247819001055,
+      "reachRate": 0.5870721886683923,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 0,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.3335346924406324,
+      "qualifyRate": 0.5012174205078382,
+      "meanFinish": 5.041806100296259,
+      "reachRate": 0.6065152987178103,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 3
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 4.635623068827566,
+     "finishRounds": 0.12408049647790165,
+     "slowest": "B",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "A2",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.180638
+     },
+     {
+      "id": "A4",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.18421
+     },
+     {
+      "id": "A8",
+      "type": "noise",
+      "hitRate": 0.170547
+     },
+     {
+      "id": "C2",
+      "type": "booster",
+      "hitRate": 0.109882
+     },
+     {
+      "id": "C5",
+      "type": "booster",
+      "hitRate": 0.059343
+     },
+     {
+      "id": "C7",
+      "type": "booster",
+      "hitRate": 0.061462
+     },
+     {
+      "id": "C9",
+      "type": "noise",
+      "hitRate": 0.064116
+     },
+     {
+      "id": "M3",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.190691
+     }
+    ],
+    "perTeam": {
+     "chance": 0.555539,
+     "noise": 0.234663,
+     "booster": 0.230687
+    },
+    "quick": {
+     "chanceCorrect": 0.6058962557084201,
+     "noiseCorrect": 0.5969113153756663
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.106211,
+      "gainRate": 0.106211,
+      "usedPerTeam": 0.095201,
+      "blockedShare": 0,
+      "uplift": -0.009587206383981584
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.116287,
+      "gainRate": 0.116287,
+      "usedPerTeam": 0.000012,
+      "blockedShare": 0,
+      "uplift": 0.084641722159549
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.109093,
+      "gainRate": 0.109093,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": 0.0108728238803784
+     }
+    ],
+    "isiStepsPerTeam": 0.190402,
+    "hopGainAvg": 2.0833333333333335,
+    "rounds": {
+     "avgRemaining": [
+      12.336814999999993,
+      9.120535999999998,
+      5.82139306965348,
+      3.2730136788710738,
+      2.3295910299719687
+     ],
+     "gap": [
+      5.61677,
+      8.41767,
+      9.767078353917697,
+      8.52752602351131,
+      7.180550564220513
+     ],
+     "neighbors": [
+      5.748129999999999,
+      2.797064000000002,
+      3.200088520299031,
+      3.4580110993199717,
+      3.5061104779246066
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99995,
+      0.83194,
+      0.13913
+     ]
+    },
+    "alive": {
+     "mean": 8.32602110729139,
+     "pBelowSlots": 0.00246412000865447
+    },
+    "cluster": {
+     "meanNearRx": 7.3315483173998395,
+     "pAllNear": 0.1578867889460662
+    },
+    "comeback": {
+     "share": 0.26588,
+     "bottomHalfQualify": 0.26588
+    }
+   }
+  },
+  {
+   "label": "c-heavy-rewards",
+   "description": "p3/s2 isi3/-2 B+4 N-2 hop∞ A6=N B5=C:orth B8=N C3=B C6=C:hop C8=B C11=C:isi",
+   "score": 35.297022273949054,
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424242
+    },
+    "finish": {
+     "meanQualRound": 4.274953178535412,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00005,
+      0.16267,
+      0.84959
+     ],
+     "fallbackPct": 0.15041,
+     "fallback4Pct": 0.83733,
+     "qualRoundShare": [
+      0,
+      0,
+      0.10004656047537619,
+      0.5249537005138356,
+      0.37499973901078826
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.03654,
+      0.3074766666666667,
+      0.67007
+     ],
+     "meanFinish": 4.985913333333333
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.2749325,
+      0.53975,
+      0.76034
+     ],
+     "reachRate": [
+      0.3821775,
+      0.67007,
+      0.85917
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.6371100952769716,
+      "qualifyRate": 0.5516523344995886,
+      "meanFinish": 4.913386704690356,
+      "reachRate": 0.6675921331164141,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.1585411607922706,
+      "qualifyRate": 0.4806043051059238,
+      "meanFinish": 5.102730605882761,
+      "reachRate": 0.5982532199945728,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.20434874393075786,
+      "qualifyRate": 0.35521522854568954,
+      "meanFinish": 5.356561630958443,
+      "reachRate": 0.4490717167365164,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 0,
+       "booster": 2
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.3334580643612104,
+      "qualifyRate": 0.5675185876394448,
+      "meanFinish": 4.95852211013964,
+      "reachRate": 0.6454576549870081,
+      "specialsOnBranch": {
+       "chance": 0,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.3323054696223251,
+      "qualifyRate": 0.4881403289033944,
+      "meanFinish": 5.160995260948894,
+      "reachRate": 0.5637604099550182,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.3342364660164645,
+      "qualifyRate": 0.4452021169596245,
+      "meanFinish": 5.240432970927727,
+      "reachRate": 0.514889362517362,
+      "specialsOnBranch": {
+       "chance": 2,
+       "noise": 0,
+       "booster": 2
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 12.231647067982031,
+     "finishRounds": 0.2819108607880869,
+     "slowest": "C",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "A6",
+      "type": "noise",
+      "hitRate": 0.198999
+     },
+     {
+      "id": "B5",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.046112
+     },
+     {
+      "id": "B8",
+      "type": "noise",
+      "hitRate": 0.043809
+     },
+     {
+      "id": "C3",
+      "type": "booster",
+      "hitRate": 0.065951
+     },
+     {
+      "id": "C6",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.041721
+     },
+     {
+      "id": "C8",
+      "type": "booster",
+      "hitRate": 0.043309
+     },
+     {
+      "id": "C11",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.037313
+     }
+    ],
+    "perTeam": {
+     "chance": 0.125146,
+     "noise": 0.242808,
+     "booster": 0.10926
+    },
+    "quick": {
+     "chanceCorrect": 0.5845652278139134,
+     "noiseCorrect": 0.5980321900431617
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.021453,
+      "gainRate": 0.021453,
+      "usedPerTeam": 0.008807,
+      "blockedShare": 0,
+      "uplift": -0.0793254507885197
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.023426,
+      "gainRate": 0.023426,
+      "usedPerTeam": 0.011824,
+      "blockedShare": 0,
+      "uplift": 0.03134034998296992
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.027138,
+      "gainRate": 0.027138,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": -0.08485527328623907
+     }
+    ],
+    "isiStepsPerTeam": 0.017614,
+    "hopGainAvg": 5.171515561569689,
+    "rounds": {
+     "avgRemaining": [
+      12.046370999999997,
+      9.124344999999993,
+      5.903325166258314,
+      3.3468680209714208,
+      2.378352503158035
+     ],
+     "gap": [
+      4.84669,
+      7.95696,
+      9.815790789539477,
+      8.809871854585408,
+      7.425636593311615
+     ],
+     "neighbors": [
+      7.4905499999999945,
+      3.492872000000001,
+      2.853126576963766,
+      2.9738413521133613,
+      3.1384978941158703
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99995,
+      0.83733,
+      0.15041
+     ]
+    },
+    "alive": {
+     "mean": 8.203014343209965,
+     "pBelowSlots": 0.003272306020326514
+    },
+    "cluster": {
+     "meanNearRx": 7.245694982285573,
+     "pAllNear": 0.1398674654833508
+    },
+    "comeback": {
+     "share": 0.27286,
+     "bottomHalfQualify": 0.27286
+    }
+   }
+  },
+  {
+   "label": "baseline-even",
+   "description": "p3/s2 isi3/-2 B+3 N-2 hop∞ A4=C:isi A7=N B5=C:hop B8=N C4=B C6=C:orth C9=B",
+   "score": 52.613401451962794,
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424242
+    },
+    "finish": {
+     "meanQualRound": 4.31877910354758,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.00003,
+      0.13947,
+      0.82935
+     ],
+     "fallbackPct": 0.17065,
+     "fallback4Pct": 0.86053,
+     "qualRoundShare": [
+      0,
+      0,
+      0.08498025379556573,
+      0.5112603888612882,
+      0.4037593573431461
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.029853333333333332,
+      0.28937666666666667,
+      0.6586866666666666
+     ],
+     "meanFinish": 5.022083333333334
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.276485,
+      0.54045,
+      0.75757
+     ],
+     "reachRate": [
+      0.37427,
+      0.6586866666666666,
+      0.85141
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.6967875423718639,
+      "qualifyRate": 0.5310972562849282,
+      "meanFinish": 4.994003687387641,
+      "reachRate": 0.634654264331704,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.2077041753544829,
+      "qualifyRate": 0.4739904719239681,
+      "meanFinish": 5.1412399986512325,
+      "reachRate": 0.5823783580687583,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.09550828227365321,
+      "qualifyRate": 0.33239401208895963,
+      "meanFinish": 5.443321216438471,
+      "reachRate": 0.41741480635665573,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 0,
+       "booster": 2
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.33361214553997187,
+      "qualifyRate": 0.5739657747467295,
+      "meanFinish": 4.993725970045405,
+      "reachRate": 0.6319195772527426,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.33245954388190635,
+      "qualifyRate": 0.5121852861691435,
+      "meanFinish": 5.157418609270327,
+      "reachRate": 0.5708094833968328,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.3339283105781218,
+      "qualifyRate": 0.41475457972039287,
+      "meanFinish": 5.369595570390167,
+      "reachRate": 0.4646536071477795,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 0,
+       "booster": 2
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 15.921119502633662,
+     "finishRounds": 0.37586960034476213,
+     "slowest": "C",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "A4",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.193675
+     },
+     {
+      "id": "A7",
+      "type": "noise",
+      "hitRate": 0.213013
+     },
+     {
+      "id": "B5",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.061439
+     },
+     {
+      "id": "B8",
+      "type": "noise",
+      "hitRate": 0.057704
+     },
+     {
+      "id": "C4",
+      "type": "booster",
+      "hitRate": 0.026221
+     },
+     {
+      "id": "C6",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.023748
+     },
+     {
+      "id": "C9",
+      "type": "booster",
+      "hitRate": 0.021572
+     }
+    ],
+    "perTeam": {
+     "chance": 0.278862,
+     "noise": 0.270717,
+     "booster": 0.047793
+    },
+    "quick": {
+     "chanceCorrect": 0.5794694149794523,
+     "noiseCorrect": 0.5970256762597104
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.10962,
+      "gainRate": 0.10962,
+      "usedPerTeam": 0.092703,
+      "blockedShare": 0,
+      "uplift": -0.04501522508636115
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.035422,
+      "gainRate": 0.035422,
+      "usedPerTeam": 0.012299,
+      "blockedShare": 0,
+      "uplift": 0.08868099636928353
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.013498,
+      "gainRate": 0.013498,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": -0.18312753250566183
+     }
+    ],
+    "isiStepsPerTeam": 0.185406,
+    "hopGainAvg": 4.632246524107651,
+    "rounds": {
+     "avgRemaining": [
+      11.959890999999994,
+      8.929948999999999,
+      5.857120713621407,
+      3.3454440867837243,
+      2.3676823908584828
+     ],
+     "gap": [
+      4.61478,
+      7.42036,
+      9.156594697840935,
+      8.387784272483238,
+      7.159038968649282
+     ],
+     "neighbors": [
+      7.625099999999995,
+      3.906400000000001,
+      3.2708664355168744,
+      3.252717040937676,
+      3.3102758360889055
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.99997,
+      0.86053,
+      0.17065
+     ]
+    },
+    "alive": {
+     "mean": 8.228463853671574,
+     "pBelowSlots": 0.0037767422402472895
+    },
+    "cluster": {
+     "meanNearRx": 7.316452643636583,
+     "pAllNear": 0.15531440284560197
+    },
+    "comeback": {
+     "share": 0.280138,
+     "bottomHalfQualify": 0.280138
+    }
+   }
+  },
+  {
+   "label": "safe-short",
+   "description": "p3/s2 isi3/-2 B+3 N-2 hop∞ A5=C:orth A8=N B2=B B4=C:isi B7=N C5=B C8=C:hop",
+   "score": 80.50110261827751,
+   "report": {
+    "meta": {
+     "games": 100000,
+     "parityGames": 50000,
+     "teams": 10,
+     "rounds": 5,
+     "slots": 5,
+     "seed": 424242
+    },
+    "finish": {
+     "meanQualRound": 4.230792517303011,
+     "medianQualRound": 4,
+     "endByRound": [
+      0,
+      0,
+      0.0001,
+      0.19569,
+      0.87186
+     ],
+     "fallbackPct": 0.12814,
+     "fallback4Pct": 0.80431,
+     "qualRoundShare": [
+      0,
+      0,
+      0.11842143458445818,
+      0.5323646135280725,
+      0.3492139518874693
+     ]
+    },
+    "avgTeam": {
+     "reachByRound": [
+      0,
+      0,
+      0.04631,
+      0.3268,
+      0.6866166666666667
+     ],
+     "meanFinish": 4.940273333333334
+    },
+    "terciles": {
+     "qualifyRate": [
+      0.276615,
+      0.53972,
+      0.7581266666666666
+     ],
+     "reachRate": [
+      0.39978,
+      0.6866166666666667,
+      0.86968
+     ]
+    },
+    "routes": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.618410046864557,
+      "qualifyRate": 0.5291237788916106,
+      "meanFinish": 4.930320376128888,
+      "reachRate": 0.6607219707289924,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.31009448951250457,
+      "qualifyRate": 0.49032045739065344,
+      "meanFinish": 5.0044654956571115,
+      "reachRate": 0.6129118645380277,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 1,
+       "booster": 1
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.07149546362293842,
+      "qualifyRate": 0.2937389795404293,
+      "meanFinish": 5.483724705421366,
+      "reachRate": 0.3982339276218198,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 0,
+       "booster": 1
+      }
+     }
+    ],
+    "parity": [
+     {
+      "id": "A",
+      "length": 15,
+      "usage": 0.33354744595657315,
+      "qualifyRate": 0.5790228333513312,
+      "meanFinish": 4.9611125109487295,
+      "reachRate": 0.6444572429598167,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 1,
+       "booster": 0
+      }
+     },
+     {
+      "id": "B",
+      "length": 16,
+      "usage": 0.3326369670446655,
+      "qualifyRate": 0.5636734423783771,
+      "meanFinish": 4.980478972032894,
+      "reachRate": 0.6252323573821971,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 1,
+       "booster": 1
+      }
+     },
+     {
+      "id": "C",
+      "length": 19,
+      "usage": 0.33381558699876135,
+      "qualifyRate": 0.3583802901330776,
+      "meanFinish": 5.4769751828317945,
+      "reachRate": 0.4028174079846541,
+      "specialsOnBranch": {
+       "chance": 1,
+       "noise": 0,
+       "booster": 1
+      }
+     }
+    ],
+    "parityGap": {
+     "qualifyPp": 22.06425432182536,
+     "finishRounds": 0.515862671883065,
+     "slowest": "C",
+     "fastest": "A"
+    },
+    "nodes": [
+     {
+      "id": "A5",
+      "type": "chance",
+      "card": "orth",
+      "hitRate": 0.18127
+     },
+     {
+      "id": "A8",
+      "type": "noise",
+      "hitRate": 0.170056
+     },
+     {
+      "id": "B2",
+      "type": "booster",
+      "hitRate": 0.096711
+     },
+     {
+      "id": "B4",
+      "type": "chance",
+      "card": "isi",
+      "hitRate": 0.068435
+     },
+     {
+      "id": "B7",
+      "type": "noise",
+      "hitRate": 0.085311
+     },
+     {
+      "id": "C5",
+      "type": "booster",
+      "hitRate": 0.020553
+     },
+     {
+      "id": "C8",
+      "type": "chance",
+      "card": "hop",
+      "hitRate": 0.013878
+     }
+    ],
+    "perTeam": {
+     "chance": 0.263583,
+     "noise": 0.255367,
+     "booster": 0.117264
+    },
+    "quick": {
+     "chanceCorrect": 0.5850111729512146,
+     "noiseCorrect": 0.5931933256842113
+    },
+    "cards": [
+     {
+      "card": "isi",
+      "gainedPerTeam": 0.038476,
+      "gainRate": 0.038476,
+      "usedPerTeam": 0.030958,
+      "blockedShare": 0,
+      "uplift": -0.12805682631050289
+     },
+     {
+      "card": "hop",
+      "gainedPerTeam": 0.008148,
+      "gainRate": 0.008148,
+      "usedPerTeam": 0.002578,
+      "blockedShare": 0,
+      "uplift": -0.1356373056222673
+     },
+     {
+      "card": "orth",
+      "gainedPerTeam": 0.104791,
+      "gainRate": 0.104791,
+      "usedPerTeam": 0,
+      "blockedShare": 0,
+      "uplift": -0.02610184757422048
+     }
+    ],
+    "isiStepsPerTeam": 0.061916,
+    "hopGainAvg": 4.198603568657874,
+    "rounds": {
+     "avgRemaining": [
+      11.840275999999994,
+      8.698376999999999,
+      5.565784578457845,
+      3.1847347415797387,
+      2.3114250039019817
+     ],
+     "gap": [
+      5.13896,
+      7.69535,
+      9.241394139413941,
+      8.188782931954098,
+      6.990713282347432
+     ],
+     "neighbors": [
+      7.092505999999991,
+      3.419820000000002,
+      3.0381993834304057,
+      3.0443844502031046,
+      3.1555717828466356
+     ],
+     "stillRunning": [
+      1,
+      1,
+      0.9999,
+      0.80431,
+      0.12814
+     ]
+    },
+    "alive": {
+     "mean": 8.525991222289914,
+     "pBelowSlots": 0.001342765848988574
+    },
+    "cluster": {
+     "meanNearRx": 7.350606748789943,
+     "pAllNear": 0.161470878352029
+    },
+    "comeback": {
+     "share": 0.265464,
+     "bottomHalfQualify": 0.265464
+    }
+   }
+  }
+ ],
+ "rationale": [
+  "Structure: 3 shared spaces from the Transmitter to the junction, then Path A / B / C with 8 / 9 / 12 own spaces, merging into 3 shared spaces before the Receiver. Route lengths stay exactly 15 / 16 / 19.",
+  "Expected effective length for an average team (real length minus expected Booster/Chance gain plus expected Noise loss): A 14.9, B 15.5, C 14.9 — the specials are placed to pull the 15 / 16 / 19-space routes together.",
+  "S2 — CHANCE (ISI) on the shared start: 20% of teams land here. Every team passes here, so the card is reachable for everyone.",
+  "A3 — CHANCE (ORTH) on Path A: 19% of teams land here. Teams that pick Path A can earn the card; it is not next to any Noise space.",
+  "A6 — NOISE −2 on Path A: 18% of teams land here. A quick question protects the team, so this is a soft penalty that trims the reward of the short route rather than punishing luck.",
+  "A8 — NOISE −2 on Path A: 16% of teams land here. A quick question protects the team, so this is a soft penalty that trims the reward of the short route rather than punishing luck.",
+  "C2 — SIGNAL BOOSTER +4 on Path C: 9% of teams land here. It sits 14 spaces from the Receiver, so even after the jump the team still needs 10 more; it shortens Path C without deciding the game on its own.",
+  "C6 — SIGNAL BOOSTER +4 on Path C: 6% of teams land here. It sits 10 spaces from the Receiver, so even after the jump the team still needs 6 more; it shortens Path C without deciding the game on its own.",
+  "C8 — SIGNAL BOOSTER +4 on Path C: 6% of teams land here. It sits 8 spaces from the Receiver, so even after the jump the team still needs 4 more; it shortens Path C without deciding the game on its own.",
+  "M2 — CHANCE (HOP) on the shared finish: 21% of teams land here. Every team passes here, so the card is reachable for everyone.",
+  "No two special spaces are adjacent, no Noise follows a Chance within two spaces, and no Booster lands within 4 spaces of the Receiver."
+ ],
+ "effectiveLengths": [
+  {
+   "id": "A",
+   "length": 15,
+   "effective": 14.884848484848485
+  },
+  {
+   "id": "B",
+   "length": 16,
+   "effective": 15.545454545454545
+  },
+  {
+   "id": "C",
+   "length": 19,
+   "effective": 14.909090909090907
+  }
+ ]
+}
